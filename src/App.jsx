@@ -7,6 +7,8 @@ import { weeklyItems } from "./data";
 import Header from "./components/Header";
 import CategoryForm from "./components/CategoryForm";
 import Footer from "./components/Footer";
+
+// 3rd Party Libraries
 import { nanoid } from "nanoid";
 
 function App() {
@@ -26,12 +28,19 @@ function App() {
 		}));
 	};
 
-  const clearCategory = (category) => {
-    setItems((prevItems) => ({
+	const removeItem = (category, itemId) => {
+		setItems((prevItems) => ({
       ...prevItems,
-      [category]: []
+      [category]: prevItems[category].filter((item) => item.id !== itemId),
     }))
-  }
+	};
+
+	const clearCategory = (category) => {
+		setItems((prevItems) => ({
+			...prevItems,
+			[category]: [],
+		}));
+	};
 
 	const clearAll = () => {
 		setItems({
@@ -49,7 +58,8 @@ function App() {
 				categoryEmoji2="🥕"
 				type={items.produce}
 				addItem={addItem}
-        clearCategory={clearCategory}
+        removeItem={removeItem}
+				clearCategory={clearCategory}
 			/>
 			<CategoryForm
 				categoryName="Protein"
@@ -57,7 +67,8 @@ function App() {
 				categoryEmoji2="🥠"
 				type={items.protein}
 				addItem={addItem}
-        clearCategory={clearCategory}
+        removeItem={removeItem}
+				clearCategory={clearCategory}
 			/>
 			<button onClick={clearAll}>Clear All</button>
 			<Footer />

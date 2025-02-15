@@ -7,6 +7,7 @@ const CategoryForm = ({
 	categoryEmoji2,
 	type,
 	addItem,
+	removeItem,
 	clearCategory,
 }) => {
 	const [item, setItem] = useState("");
@@ -23,10 +24,10 @@ const CategoryForm = ({
 		setQuantity(1);
 	};
 
-  const handleClearCategory = (e) =>{
-    e.preventDefault();
-    clearCategory(categoryName.toLowerCase());
-  }
+	const handleClearCategory = (e) => {
+		e.preventDefault();
+		clearCategory(categoryName.toLowerCase());
+	};
 
 	return (
 		<div>
@@ -39,7 +40,13 @@ const CategoryForm = ({
 						<p>
 							{groceryItem.quantity} x {groceryItem.name}
 						</p>
-						<button>Delete</button>
+						<button
+							onClick={() =>
+								removeItem(categoryName.toLowerCase(), groceryItem.id)
+							}
+						>
+							Delete
+						</button>
 					</div>
 				);
 			})}
@@ -57,9 +64,7 @@ const CategoryForm = ({
 					onChange={(e) => setItem(e.target.value)}
 				/>
 				<button type="submit">Add</button>
-				<button onClick={handleClearCategory}>
-					Clear {categoryName} List
-				</button>
+				<button onClick={handleClearCategory}>Clear {categoryName} List</button>
 			</form>
 		</div>
 	);

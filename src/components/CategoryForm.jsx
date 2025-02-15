@@ -7,6 +7,7 @@ const CategoryForm = ({
 	categoryEmoji2,
 	type,
 	addItem,
+	toggleItem,
 	removeItem,
 	clearCategory,
 }) => {
@@ -37,7 +38,19 @@ const CategoryForm = ({
 			{type.map((groceryItem) => {
 				return (
 					<div key={nanoid()}>
-						<p>
+						<input
+							type="checkbox"
+							checked={groceryItem.purchased}
+							onChange={() =>
+								toggleItem(categoryName.toLowerCase(), groceryItem.id)
+							}
+						/>
+						<p
+							style={{
+								textTransform: "capitalize",
+								textDecoration: groceryItem.purchased && "line-through",
+							}}
+						>
 							{groceryItem.quantity} x {groceryItem.name}
 						</p>
 						<button

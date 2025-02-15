@@ -28,11 +28,20 @@ function App() {
 		}));
 	};
 
+	const toggleItem = (category, itemId) => {
+		setItems((prevItems) => ({
+			...prevItems,
+			[category]: prevItems[category].map((item) =>
+				item.id === itemId ? { ...item, purchased: !item.purchased } : item
+			),
+		}));
+	};
+
 	const removeItem = (category, itemId) => {
 		setItems((prevItems) => ({
-      ...prevItems,
-      [category]: prevItems[category].filter((item) => item.id !== itemId),
-    }))
+			...prevItems,
+			[category]: prevItems[category].filter((item) => item.id !== itemId),
+		}));
 	};
 
 	const clearCategory = (category) => {
@@ -58,7 +67,8 @@ function App() {
 				categoryEmoji2="🥕"
 				type={items.produce}
 				addItem={addItem}
-        removeItem={removeItem}
+        toggleItem={toggleItem}
+				removeItem={removeItem}
 				clearCategory={clearCategory}
 			/>
 			<CategoryForm
@@ -67,7 +77,8 @@ function App() {
 				categoryEmoji2="🥠"
 				type={items.protein}
 				addItem={addItem}
-        removeItem={removeItem}
+        toggleItem={toggleItem}
+				removeItem={removeItem}
 				clearCategory={clearCategory}
 			/>
 			<button onClick={clearAll}>Clear All</button>

@@ -1,3 +1,7 @@
+import { weeklyItems } from "../data";
+
+console.log(weeklyItems);
+
 const Categories = () => {
   return;
 }

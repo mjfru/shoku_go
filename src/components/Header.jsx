@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div>Header</div>
+    <h1>Shoku食GO</h1>
   )
 }
 

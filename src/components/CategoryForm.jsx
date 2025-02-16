@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const CategoryForm = ({
 	categoryName,
+  categoryKey,
 	categoryEmoji1,
 	categoryEmoji2,
 	type,
@@ -20,14 +21,14 @@ const CategoryForm = ({
 			//? Possible place for a toast
 			return;
 		}
-		addItem(categoryName.toLowerCase(), item, quantity);
+		addItem(categoryKey, item, quantity);
 		setItem("");
 		setQuantity(1);
 	};
 
 	const handleClearCategory = (e) => {
 		e.preventDefault();
-		clearCategory(categoryName.toLowerCase());
+		clearCategory(categoryKey);
 	};
 
 	return (
@@ -42,7 +43,7 @@ const CategoryForm = ({
 							type="checkbox"
 							checked={groceryItem.purchased}
 							onChange={() =>
-								toggleItem(categoryName.toLowerCase(), groceryItem.id)
+								toggleItem(categoryKey, groceryItem.id)
 							}
 						/>
 						<p
@@ -55,7 +56,7 @@ const CategoryForm = ({
 						</p>
 						<button
 							onClick={() =>
-								removeItem(categoryName.toLowerCase(), groceryItem.id)
+								removeItem(categoryKey, groceryItem.id)
 							}
 						>
 							Delete

@@ -55,6 +55,7 @@ function App() {
 		setItems({
 			produce: [],
 			protein: [],
+			dryGoods: [],
 		});
 	};
 
@@ -63,21 +64,34 @@ function App() {
 			<Header />
 			<CategoryForm
 				categoryName="Produce"
+				categoryKey="produce"
 				categoryEmoji1="🍎"
 				categoryEmoji2="🥕"
 				type={items.produce}
 				addItem={addItem}
-        toggleItem={toggleItem}
+				toggleItem={toggleItem}
 				removeItem={removeItem}
 				clearCategory={clearCategory}
 			/>
 			<CategoryForm
 				categoryName="Protein"
+				categoryKey="protein"
 				categoryEmoji1="🍖"
-				categoryEmoji2="🥠"
+				categoryEmoji2="🥩"
 				type={items.protein}
 				addItem={addItem}
-        toggleItem={toggleItem}
+				toggleItem={toggleItem}
+				removeItem={removeItem}
+				clearCategory={clearCategory}
+			/>
+			<CategoryForm
+				categoryName="Dry Goods"
+				categoryKey="dryGoods"
+				categoryEmoji1="🥨"
+				categoryEmoji2="🧂"
+				type={items.dryGoods}
+				addItem={addItem}
+				toggleItem={toggleItem}
 				removeItem={removeItem}
 				clearCategory={clearCategory}
 			/>

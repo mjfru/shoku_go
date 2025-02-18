@@ -1,5 +1,96 @@
+/* Global CSS */
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Custom CSS */
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.shoku {
+  color: red;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
 .category-container {
   margin: 0 auto;
-  width: 90vw;
-  border: 3px solid red;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* justify-content: space-evenly; */
+  place-content: center;
+  gap: 50px;
+}
+
+.single-category {
+  border: 3px solid green;
+  min-height: 25vh;
+  max-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  overflow-y: auto;
+}
+
+.single-category::-webkit-scrollbar {
+  width: 8px;
+}
+
+.single-category::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.single-category h2 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.single-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0px 10px;
+}
+
+.single-item input {
+  flex-shrink: 0;
+}
+
+.single-item p {
+  flex-grow: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.single-item button {
+  flex-shrink: 0;
+  min-width: 60px;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.quantity-input {
+  width: 2.5rem;
+}
+
+.add-btn {
+  width: 3rem;
 }

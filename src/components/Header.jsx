@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <h1>Shoku食GO</h1>
+    <h1>Shoku<span className="shoku">食</span>GO</h1>
   )
 }
 

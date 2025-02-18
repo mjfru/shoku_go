@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const CategoryForm = ({
 	categoryName,
-  categoryKey,
+	categoryKey,
 	categoryEmoji1,
 	categoryEmoji2,
 	type,
@@ -38,13 +38,11 @@ const CategoryForm = ({
 			</h2>
 			{type.map((groceryItem) => {
 				return (
-					<div key={nanoid()}>
+					<div key={nanoid()} className="single-item">
 						<input
 							type="checkbox"
 							checked={groceryItem.purchased}
-							onChange={() =>
-								toggleItem(categoryKey, groceryItem.id)
-							}
+							onChange={() => toggleItem(categoryKey, groceryItem.id)}
 						/>
 						<p
 							style={{
@@ -52,32 +50,33 @@ const CategoryForm = ({
 								textDecoration: groceryItem.purchased && "line-through",
 							}}
 						>
-							{groceryItem.quantity} x {groceryItem.name}
+							{groceryItem.name}({groceryItem.quantity})
 						</p>
-						<button
-							onClick={() =>
-								removeItem(categoryKey, groceryItem.id)
-							}
-						>
+						<button onClick={() => removeItem(categoryKey, groceryItem.id)}>
 							Delete
 						</button>
 					</div>
 				);
 			})}
-			<form onSubmit={handleSubmit}>
-				<label>Quantity:</label>
-				<input
-					type="number"
-					value={quantity}
-					onChange={(e) => setQuantity(e.target.value)}
-				/>
-				<input
-					type="text"
-					placeholder="Product name"
-					value={item}
-					onChange={(e) => setItem(e.target.value)}
-				/>
-				<button type="submit">Add</button>
+			<form onSubmit={handleSubmit} className="form-container">
+				<div className="form-inputs">
+					<label>Quantity: </label>
+					<input
+						type="number"
+						value={quantity}
+						className="quantity-input"
+						onChange={(e) => setQuantity(e.target.value)}
+					/>
+					<input
+						type="text"
+						placeholder="Product name"
+						value={item}
+						onChange={(e) => setItem(e.target.value)}
+					/>
+					<button type="submit" className="btn add-btn">
+						Add
+					</button>
+				</div>
 				<button onClick={handleClearCategory}>Clear {categoryName} List</button>
 			</form>
 		</div>

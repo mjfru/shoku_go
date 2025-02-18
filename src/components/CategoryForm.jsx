@@ -32,7 +32,7 @@ const CategoryForm = ({
 	};
 
 	return (
-		<div>
+		<div className="single-category">
 			<h2>
 				{categoryEmoji1} {categoryName} {categoryEmoji2}
 			</h2>

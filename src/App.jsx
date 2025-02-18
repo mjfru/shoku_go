@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 
 // 3rd Party Libraries
 import { nanoid } from "nanoid";
+import ClearAll from "./components/ClearAll";
 
 function App() {
 	const [items, setItems] = useState(weeklyItems);
@@ -51,51 +52,89 @@ function App() {
 		}));
 	};
 
-	const clearAll = () => {
-		setItems({
-			produce: [],
-			protein: [],
-			dryGoods: [],
-		});
-	};
-
 	return (
 		<>
 			<Header />
-			<CategoryForm
-				categoryName="Produce"
-				categoryKey="produce"
-				categoryEmoji1="🍎"
-				categoryEmoji2="🥕"
-				type={items.produce}
-				addItem={addItem}
-				toggleItem={toggleItem}
-				removeItem={removeItem}
-				clearCategory={clearCategory}
-			/>
-			<CategoryForm
-				categoryName="Protein"
-				categoryKey="protein"
-				categoryEmoji1="🍖"
-				categoryEmoji2="🥩"
-				type={items.protein}
-				addItem={addItem}
-				toggleItem={toggleItem}
-				removeItem={removeItem}
-				clearCategory={clearCategory}
-			/>
-			<CategoryForm
-				categoryName="Dry Goods"
-				categoryKey="dryGoods"
-				categoryEmoji1="🥨"
-				categoryEmoji2="🧂"
-				type={items.dryGoods}
-				addItem={addItem}
-				toggleItem={toggleItem}
-				removeItem={removeItem}
-				clearCategory={clearCategory}
-			/>
-			<button onClick={clearAll}>Clear All</button>
+			<div className="category-container">
+				<CategoryForm
+					categoryName="Produce"
+					categoryKey="produce"
+					categoryEmoji1="🍎"
+					categoryEmoji2="🥑"
+					type={items.produce}
+					addItem={addItem}
+					toggleItem={toggleItem}
+					removeItem={removeItem}
+					clearCategory={clearCategory}
+				/>
+				<CategoryForm
+					categoryName="Bakery"
+					categoryKey="bakery"
+					categoryEmoji1="🥯"
+					categoryEmoji2="🥖"
+					type={items.bakery}
+					addItem={addItem}
+					toggleItem={toggleItem}
+					removeItem={removeItem}
+					clearCategory={clearCategory}
+				/>
+				<CategoryForm
+					categoryName="Dry Goods"
+					categoryKey="dryGoods"
+					categoryEmoji1="🥨"
+					categoryEmoji2="🧂"
+					type={items.dryGoods}
+					addItem={addItem}
+					toggleItem={toggleItem}
+					removeItem={removeItem}
+					clearCategory={clearCategory}
+				/>
+				<CategoryForm
+					categoryName="Dairy"
+					categoryKey="dairy"
+					categoryEmoji1="🥛"
+					categoryEmoji2="🧀"
+					type={items.dairy}
+					addItem={addItem}
+					toggleItem={toggleItem}
+					removeItem={removeItem}
+					clearCategory={clearCategory}
+				/>
+				<CategoryForm
+					categoryName="Protein"
+					categoryKey="protein"
+					categoryEmoji1="🍖"
+					categoryEmoji2="🥩"
+					type={items.protein}
+					addItem={addItem}
+					toggleItem={toggleItem}
+					removeItem={removeItem}
+					clearCategory={clearCategory}
+				/>
+				<CategoryForm
+					categoryName="Frozen"
+					categoryKey="frozen"
+					categoryEmoji1="🧊"
+					categoryEmoji2="🍨"
+					type={items.frozen}
+					addItem={addItem}
+					toggleItem={toggleItem}
+					removeItem={removeItem}
+					clearCategory={clearCategory}
+				/>
+				<CategoryForm
+					categoryName="Household Goods"
+					categoryKey="other"
+					categoryEmoji1="💡"
+					categoryEmoji2="🧼"
+					type={items.other}
+					addItem={addItem}
+					toggleItem={toggleItem}
+					removeItem={removeItem}
+					clearCategory={clearCategory}
+				/>
+			</div>
+			<ClearAll setItems={setItems} />
 			<Footer />
 		</>
 	);

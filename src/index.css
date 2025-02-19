@@ -7,90 +7,118 @@
 	box-sizing: border-box;
 }
 
-/* Custom CSS */
-h1 {
-  text-align: center;
-  margin: 1rem;
+:root {
+	/* Main color scheme */
+	--background-color: #f3f1eb;
+	--header-color: #a084cf;
+	--primary-btn-color: #f6bd60;
+	--primary-text-color: #3f3f3f;
+	--secondary-text-color: #92b4a7;
+
+	--gradient-1: linear-gradient(90deg, #6fa3bf, #f7ede2);
+	--gradient-2: linear-gradient(45deg, #f6bd60, #ff8c69);
 }
 
-.shoku {
-  color: red;
-  border: 2px solid red;
-  border-radius: 50%;
-  padding: .5rem;
+/* Custom CSS */
+body {
+  background: var(--background-color);
+}
+
+h1 {
+	text-align: center;
+	margin: 1rem;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.header-buttons {
+	display: flex;
+	justify-content: space-between;
+	min-width: 300px;
+}
+
+.logo {
+	color: red;
+	border: 2px solid red;
+	border-radius: 50%;
+	padding: 0.5rem;
+  z-index: -1;
 }
 
 .category-container {
-  margin: 0 auto;
-  width: 80vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* justify-content: space-evenly; */
-  place-content: center;
-  gap: 50px;
+	margin: 0 auto;
+  margin-bottom: 5rem;
+	width: 80vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-content: center;
+	gap: 1.5rem;
 }
 
 .single-category {
-  border: 3px solid green;
-  min-height: 25vh;
-  max-height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  overflow-y: auto;
+  background: #FFFAE3;
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .single-category::-webkit-scrollbar {
-  width: 8px;
+	width: 8px;
 }
 
 .single-category::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 4px;
+	background-color: #888;
+	border-radius: 4px;
 }
 
 .single-category h2 {
-  text-align: center;
-  padding-top: 2rem;
+	text-align: center;
+	padding-top: 2rem;
 }
 
 .single-item {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 0px 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	padding: 0px 10px;
 }
 
 .single-item input {
-  flex-shrink: 0;
+	flex-shrink: 0;
 }
 
 .single-item p {
-  flex-grow: 1;
-  text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	flex-grow: 1;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .single-item button {
-  flex-shrink: 0;
-  min-width: 60px;
+	flex-shrink: 0;
+	min-width: 60px;
 }
 
 .form-inputs {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 .quantity-input {
-  width: 2.5rem;
+	width: 2.5rem;
 }
 
 .add-btn {
-  width: 3rem;
+	width: 3rem;
 }

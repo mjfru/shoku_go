@@ -50,9 +50,9 @@ const CategoryForm = ({
 								textDecoration: groceryItem.purchased && "line-through",
 							}}
 						>
-							{groceryItem.name}({groceryItem.quantity})
+							{groceryItem.name} ({groceryItem.quantity})
 						</p>
-						<button onClick={() => removeItem(categoryKey, groceryItem.id)}>
+						<button className="btn" onClick={() => removeItem(categoryKey, groceryItem.id)}>
 							Delete
 						</button>
 					</div>
@@ -60,24 +60,31 @@ const CategoryForm = ({
 			})}
 			<form onSubmit={handleSubmit} className="form-container">
 				<div className="form-inputs">
-					<label>Quantity: </label>
+					<div className="quantity-container">
+          <label>Quantity: </label>
 					<input
 						type="number"
+            min="1"
 						value={quantity}
 						className="quantity-input"
 						onChange={(e) => setQuantity(e.target.value)}
 					/>
+          </div>
+          <div className="name-add-container">
 					<input
 						type="text"
 						placeholder="Product name"
 						value={item}
+            className="item-name"
 						onChange={(e) => setItem(e.target.value)}
 					/>
 					<button type="submit" className="btn add-btn">
 						Add
 					</button>
+
+          </div>
 				</div>
-				<button onClick={handleClearCategory}>Clear {categoryName} List</button>
+				<button className="btn" onClick={handleClearCategory}>Clear {categoryName} List</button>
 			</form>
 		</div>
 	);

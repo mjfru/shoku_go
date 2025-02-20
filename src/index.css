@@ -9,7 +9,7 @@
 
 :root {
 	/* Main color scheme */
-	--background-color: #f3f1eb;
+	--background-color: #d8d8ca;
 	--header-color: #a084cf;
 	--primary-btn-color: #f6bd60;
 	--primary-text-color: #3f3f3f;
@@ -17,6 +17,11 @@
 
 	--gradient-1: linear-gradient(90deg, #6fa3bf, #f7ede2);
 	--gradient-2: linear-gradient(45deg, #f6bd60, #ff8c69);
+
+  /* Imported Fonts */
+  --main-font: "Bitter", serif;
+  --item-font: "Nothing You Could Do", serif;
+  --accent-font: "Permanent Marker", serif;
 }
 
 /* Custom CSS */
@@ -41,12 +46,27 @@ h1 {
 	min-width: 300px;
 }
 
+.shoku-text {
+  font-family: var(--main-font);
+  font-weight: 800;
+}
+
+.go-text {
+  font-family: var(--accent-font);
+  text-decoration: underline;
+}
+
 .logo {
 	color: red;
 	border: 2px solid red;
 	border-radius: 50%;
 	padding: 0.5rem;
   z-index: -1;
+}
+
+.btn {
+  font-family: var(--main-font);
+  cursor: pointer;
 }
 
 .category-container {
@@ -62,11 +82,17 @@ h1 {
 .single-category {
   background: #FFFAE3;
   background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  border: 2px solid #6fa3bf;
   border-radius: 10px;
   padding: 20px;
   position: relative;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  transition: .5s;
+}
+
+.single-category:hover {
+  box-shadow: 6px 8px 8px rgba(0, 0, 0, 0.4);
 }
 
 .single-category::-webkit-scrollbar {
@@ -81,6 +107,7 @@ h1 {
 .single-category h2 {
 	text-align: center;
 	padding-top: 2rem;
+  font-family: "Bitter", serif;
 }
 
 .single-item {
@@ -97,6 +124,10 @@ h1 {
 }
 
 .single-item p {
+  font-family: var(--item-font);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: .5px;
 	flex-grow: 1;
 	text-align: left;
 	white-space: nowrap;
@@ -111,14 +142,35 @@ h1 {
 
 .form-inputs {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: flex-end;
+  margin: 1rem;
+}
+
+.quantity-container {
+  margin-right: -1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .quantity-input {
-	width: 2.5rem;
+	width: 3rem;
+  height: 1.5rem;
+
+}
+
+.name-add-container {
+  display: flex;
+  align-items: center;
+}
+
+.item-name {
+  height: 1.5rem;
 }
 
 .add-btn {
-	width: 3rem;
+  height: 1.5rem;
+  padding: .2rem 1rem;
+  border: 1px solid pink;
+  background-color: var(--primary-btn-color);
 }

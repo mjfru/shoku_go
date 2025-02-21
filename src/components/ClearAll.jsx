@@ -12,7 +12,7 @@ const ClearAll = ({ setItems }) => {
 	};
 
 	return (
-		<button onClick={() => handleClick()}>Clear All</button>
+		<button className="btn" onClick={() => handleClick()}>Clear All</button>
 	);
 };
 

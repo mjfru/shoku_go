@@ -37,31 +37,34 @@ const CategoryForm = ({
 				{categoryEmoji1} {categoryName} {categoryEmoji2}
 			</h2>
 			<div className="items-container">
-				{type.map((groceryItem) => {
-					return (
-						<div key={nanoid()} className="single-item">
-							<input
-								type="checkbox"
-								checked={groceryItem.purchased}
-								onChange={() => toggleItem(categoryKey, groceryItem.id)}
-							/>
-							<p
-								style={{
-									textTransform: "capitalize",
-									textDecoration: groceryItem.purchased && "line-through",
-								}}
-							>
-								{groceryItem.name} ({groceryItem.quantity})
-							</p>
-							<button
-								className="btn delete-btn"
-								onClick={() => removeItem(categoryKey, groceryItem.id)}
-							>
-								Delete
-							</button>
-						</div>
-					);
-				})}
+				{type.length === 0 ? (
+					<p className="empty">List is empty!</p>
+				) : (
+					type.map((groceryItem) => {
+						return (
+							<div key={nanoid()} className="single-item">
+								<input
+									type="checkbox"
+									checked={groceryItem.purchased}
+									onChange={() => toggleItem(categoryKey, groceryItem.id)}
+								/>
+								<p
+									style={{
+										textDecoration: groceryItem.purchased && "line-through",
+									}}
+								>
+									{groceryItem.name} ({groceryItem.quantity})
+								</p>
+								<button
+									className="btn delete-btn"
+									onClick={() => removeItem(categoryKey, groceryItem.id)}
+								>
+									Delete
+								</button>
+							</div>
+						);
+					})
+				)}
 			</div>
 			<form onSubmit={handleSubmit} className="form-container">
 				<div className="form-inputs">

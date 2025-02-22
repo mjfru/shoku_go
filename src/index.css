@@ -12,7 +12,7 @@
 	--background-color: #f1f1e7;
 	--header-color: #a084cf;
 	--primary-btn-color: #f6bd60;
-  --btn-text-color: #f7ede2;
+	--btn-text-color: #f7ede2;
 	--primary-text-color: #3f3f3f;
 	--secondary-text-color: #92b4a7;
 
@@ -39,6 +39,9 @@ h1 {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	background-color: #6fa3bf;
+  margin-bottom: 2rem;
+  border-bottom: 4px solid var(--primary-btn-color);
 }
 
 .header-buttons {
@@ -55,6 +58,7 @@ h1 {
 .go-text {
 	font-family: var(--accent-font);
 	text-decoration: underline;
+	text-decoration-thickness: 0.45rem;
 }
 
 .logo {
@@ -62,14 +66,14 @@ h1 {
 	border: 2px solid red;
 	border-radius: 50%;
 	padding: 0.5rem;
-	z-index: -1;
+	z-index: 0;
 }
 
 .btn {
 	font-family: var(--main-font);
 	padding: 0.25rem 0.5rem;
 	cursor: pointer;
-  border-radius: 5px;
+	border-radius: 5px;
 }
 
 .category-container {
@@ -89,8 +93,8 @@ h1 {
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	min-height: 15.75rem;
-	max-height: 20rem;
+	min-height: 16rem;
+	max-height: 22rem;
 	padding: 20px;
 	position: relative;
 	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -112,7 +116,12 @@ h1 {
 
 .single-category h2 {
 	text-align: center;
-	font-family: "Bitter", serif;
+  font-weight: 800;
+	font-family: var(--main-font);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  margin-bottom: .25rem;
 }
 
 .single-item {
@@ -121,14 +130,15 @@ h1 {
 	align-items: center;
 	gap: 10px;
 	padding: 0px 10px;
-  border-bottom: 2px dotted var(--secondary-text-color);
+	border-bottom: 2px dotted var(--secondary-text-color);
 }
 
 .single-item input {
 	flex-shrink: 0;
 }
 
-.single-item p {
+.single-item p,
+.empty {
 	font-family: var(--item-font);
 	font-weight: 400;
 	font-size: 1rem;
@@ -138,7 +148,11 @@ h1 {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-  
+	text-transform: capitalize;
+}
+
+.empty {
+	text-align: center;
 }
 
 .single-item button {
@@ -194,15 +208,15 @@ h1 {
 }
 
 .delete-btn {
-  background-color: #D46A6A;
-  color: var(--btn-text-color);
-  border: transparent;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+	background-color: #d46a6a;
+	color: var(--btn-text-color);
+	border: transparent;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
 }
 
 .delete-btn:hover {
-  background-color: #b65454;
+	background-color: #b65454;
 }
 
 label {
@@ -218,10 +232,14 @@ input {
 	height: 1.5rem;
 	padding: 0.2rem 1rem;
 	border: transparent;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
 	background-color: var(--primary-btn-color);
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #daa146;
 }
 
 .clear-one-container {
@@ -237,6 +255,12 @@ input {
 	transition: 0.25s;
 }
 
+.clear-one-btn:hover {
+  background-color: #578aa5;
+  border: 4px solid #578aa5;
+}
+
 .clear-one-btn:active {
 	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
+

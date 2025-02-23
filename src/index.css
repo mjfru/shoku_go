@@ -15,6 +15,7 @@
 	--btn-text-color: #f7ede2;
 	--primary-text-color: #3f3f3f;
 	--secondary-text-color: #92b4a7;
+  --transparent-red: rgba(255, 0, 0, 0.50);
 
 	--gradient-1: linear-gradient(90deg, #6fa3bf, #f7ede2);
 	--gradient-2: linear-gradient(45deg, #f6bd60, #ff8c69);
@@ -31,8 +32,13 @@ body {
 }
 
 h1 {
+  position: relative;
 	text-align: center;
 	margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .header-container {
@@ -41,6 +47,7 @@ h1 {
 	justify-content: space-evenly;
 	background-color: #6fa3bf;
   margin-bottom: 2rem;
+  padding: .5rem 0;
   border-bottom: 4px solid var(--primary-btn-color);
 }
 
@@ -53,19 +60,37 @@ h1 {
 .shoku-text {
 	font-family: var(--main-font);
 	font-weight: 800;
+  font-style: italic;
+  color: var(--btn-text-color);
+  text-shadow: 1px 1px 2px black;
 }
 
 .go-text {
 	font-family: var(--accent-font);
 	text-decoration: underline;
 	text-decoration-thickness: 0.45rem;
+  color: var(--primary-btn-color);
+}
+
+.shoku-text, .go-text {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 1;
+  text-shadow: 1px 1px 2px #3f3f3f;
 }
 
 .logo {
-	color: red;
-	border: 2px solid red;
-	border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  font-size: 3rem;
+  color: var(--transparent-red);
+	border: 8px solid var(--transparent-red);
+  border-radius: 50%;
+  padding: 0;
 	padding: 0.5rem;
+  position: absolute;
+  left: 40%;
 	z-index: 0;
 }
 

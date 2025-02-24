@@ -51,6 +51,8 @@ const CategoryForm = ({
 								<p
 									style={{
 										textDecoration: groceryItem.purchased && "line-through",
+										textDecorationThickness: "3px",
+                    textDecorationColor: "#3f3f3f"
 									}}
 								>
 									{groceryItem.name} ({groceryItem.quantity})
@@ -74,7 +76,6 @@ const CategoryForm = ({
 							type="number"
 							min="1"
 							value={quantity}
-							className="quantity-input"
 							onChange={(e) => setQuantity(e.target.value)}
 						/>
 					</div>
@@ -83,7 +84,7 @@ const CategoryForm = ({
 							type="text"
 							placeholder="Product name"
 							value={item}
-							className="item-name"
+							// className="item-name"
 							onChange={(e) => setItem(e.target.value)}
 						/>
 						<button type="submit" className="btn add-btn">

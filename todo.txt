@@ -1,0 +1,25 @@
+To-do List for Shokugo (from 2/24):
+
+Styling:
+  - Custom checkboxes -- DONE
+  - Custom inputs -- DONE
+  - Footer arrangement -- DONE
+  - Button shadows on 'Deletes' -- DONE
+  - Clear all button style and placement
+  - Media queries for responsive design (primarily phone)
+  - When meal planner is done, fix header to proper navigation
+
+Functionality:
+  - Utilize local storage
+  - Add Meal Planner Component
+  - Add dropdown box for frequently bought items
+  - Restore default values button
+  - Move all categories into a <Categories> component
+  - Implement a way to share the lists / screen
+  - Toasts for item entry errors
+
+House-Keeping:
+  - Clean up custom CSS variables, apply them
+  - Look for redundant Styling
+  - Combine selectors where possible
+  - Host on Vercel, add to portfolio

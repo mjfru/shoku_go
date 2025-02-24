@@ -3,9 +3,11 @@ const Footer = () => {
 
 	return (
 		<div className="footer-container">
-			<h4>Handcoded by MJF in {currentYear}.</h4>
-			<p>Github</p>
-			<p>Developer Portfolio</p>
+			<h3>Handcoded and Maintained by MJF - {currentYear}</h3>
+			<div className="footer-links">
+				<a href="">Github</a>
+				<a href="https://mjfru-webdev-port.vercel.app/">Developer Portfolio</a>
+			</div>
 		</div>
 	);
 };

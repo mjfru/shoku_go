@@ -5,12 +5,13 @@ Styling:
   - Custom inputs -- DONE
   - Footer arrangement -- DONE
   - Button shadows on 'Deletes' -- DONE
-  - Clear all button style and placement
+  - Clear all & Restore defaults button style and placement
   - Media queries for responsive design (primarily phone)
   - When meal planner is done, fix header to proper navigation
+  - STRETCH: Cross-off animation
 
 Functionality:
-  - Utilize local storage
+  - Utilize local storage -- DONE
   - Add Meal Planner Component
   - Add dropdown box for frequently bought items
   - Restore default values button
@@ -20,6 +21,6 @@ Functionality:
 
 House-Keeping:
   - Clean up custom CSS variables, apply them
-  - Look for redundant Styling
+  - Look for redundant styling
   - Combine selectors where possible
   - Host on Vercel, add to portfolio

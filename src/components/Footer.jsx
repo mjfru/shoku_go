@@ -6,7 +6,7 @@ const Footer = () => {
 			<h3>Handcoded and Maintained by MJF - {currentYear}</h3>
 			<div className="footer-links">
 				<a href="">Github</a>
-				<a href="https://mjfru-webdev-port.vercel.app/">Developer Portfolio</a>
+				<a href="https://mjfru-webdev-port.vercel.app/" target="_blank">Developer Portfolio</a>
 			</div>
 		</div>
 	);

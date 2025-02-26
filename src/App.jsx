@@ -12,8 +12,28 @@ import Footer from "./components/Footer";
 import { nanoid } from "nanoid";
 import ClearAll from "./components/ClearAll";
 
+// Saving data to local storage:
+const setLocalStorage = (items) => {
+	localStorage.setItem("groceryItems", JSON.stringify(items || weeklyItems));
+};
+
+// Loading that data from local storage:
+const getLocalStorage = () => {
+	try {
+		const storedList = localStorage.getItem("groceryItems");
+		return storedList ? JSON.parse(storedList) : weeklyItems;
+	} catch (error) {
+		console.error(
+			"Cannot retrieve previous data, restoring to defaults: ",
+			error
+		);
+		return weeklyItems;
+	}
+};
+
 function App() {
-	const [items, setItems] = useState(weeklyItems);
+	// const [items, setItems] = useState(weeklyItems);
+	const [items, setItems] = useState(getLocalStorage())
 
 	const addItem = (category, itemName, itemQuantity) => {
 		const newItem = {
@@ -22,34 +42,47 @@ function App() {
 			purchased: false,
 			id: nanoid(),
 		};
-		setItems((prevItems) => ({
-			...prevItems,
-			//* Dynamic rendering: [category] sets the key of the pair from our arguments and prevItems[category] gives you the current list of items for that category (Ex: prevItems.produce)
-			[category]: [...(prevItems[category] || []), newItem],
-		}));
+		setItems((prevItems) => {
+			const updatedItems = {
+				...prevItems,
+				//* Dynamic rendering: [category] sets the key of the pair from our arguments and prevItems[category] gives you the current list of items for that category (Ex: prevItems.produce)
+				[category]: [...(prevItems[category] || []), newItem],
+			};
+			setLocalStorage(updatedItems);
+			return updatedItems;
+		});
 	};
 
 	const toggleItem = (category, itemId) => {
-		setItems((prevItems) => ({
-			...prevItems,
-			[category]: prevItems[category].map((item) =>
-				item.id === itemId ? { ...item, purchased: !item.purchased } : item
-			),
-		}));
+		setItems((prevItems) => {
+			const updatedItems = {
+				...prevItems,
+				[category]: prevItems[category].map((item) =>
+					item.id === itemId ? { ...item, purchased: !item.purchased } : item
+				),
+			};
+			setLocalStorage(updatedItems);
+			return updatedItems;
+		});
 	};
 
 	const removeItem = (category, itemId) => {
-		setItems((prevItems) => ({
-			...prevItems,
-			[category]: prevItems[category].filter((item) => item.id !== itemId),
-		}));
+		setItems((prevItems) => {
+			const updatedItems = {
+				...prevItems,
+				[category]: prevItems[category].filter((item) => item.id !== itemId),
+			};
+			setLocalStorage(updatedItems);
+			return updatedItems;
+		});
 	};
 
 	const clearCategory = (category) => {
-		setItems((prevItems) => ({
-			...prevItems,
-			[category]: [],
-		}));
+		setItems((prevItems) => {
+			const updatedItems = { ...prevItems, [category]: [] };
+			setLocalStorage(updatedItems);
+			return updatedItems;
+		});
 	};
 
 	return (
@@ -134,7 +167,7 @@ function App() {
 					clearCategory={clearCategory}
 				/>
 			</div>
-			<ClearAll setItems={setItems} />
+			<ClearAll setItems={setItems} setLocalStorage={setLocalStorage} />
 			<Footer />
 		</>
 	);

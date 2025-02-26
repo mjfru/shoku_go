@@ -1,18 +1,24 @@
-const ClearAll = ({ setItems }) => {
+const ClearAll = ({ setItems, setLocalStorage }) => {
 	const handleClick = () => {
-		setItems({
-			produce: [],
-			bakery: [],
-			dryGoods: [],
-			protein: [],
-			dairy: [],
-			frozen: [],
-			other: [],
+		setItems(() => {
+			const clearedList = {
+				produce: [],
+				bakery: [],
+				dryGoods: [],
+				protein: [],
+				dairy: [],
+				frozen: [],
+				other: [],
+			};
+			setLocalStorage(clearedList);
+			return clearedList;
 		});
 	};
 
 	return (
-		<button className="btn" onClick={() => handleClick()}>Clear All</button>
+		<button className="btn" onClick={handleClick}>
+			Clear All
+		</button>
 	);
 };
 

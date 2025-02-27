@@ -16,7 +16,7 @@ const ClearAll = ({ setItems, setLocalStorage }) => {
 	};
 
 	return (
-		<button className="btn" onClick={handleClick}>
+		<button className="btn global-btn clear-btn" onClick={handleClick}>
 			Clear All
 		</button>
 	);

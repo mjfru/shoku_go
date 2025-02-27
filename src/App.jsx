@@ -7,10 +7,10 @@ import { weeklyItems } from "./data";
 import Header from "./components/Header";
 import CategoryForm from "./components/CategoryForm";
 import Footer from "./components/Footer";
+import ButtonContainer from "./components/ButtonContainer";
 
 // 3rd Party Libraries
 import { nanoid } from "nanoid";
-import ClearAll from "./components/ClearAll";
 
 // Saving data to local storage:
 const setLocalStorage = (items) => {
@@ -33,7 +33,7 @@ const getLocalStorage = () => {
 
 function App() {
 	// const [items, setItems] = useState(weeklyItems);
-	const [items, setItems] = useState(getLocalStorage())
+	const [items, setItems] = useState(getLocalStorage());
 
 	const addItem = (category, itemName, itemQuantity) => {
 		const newItem = {
@@ -167,7 +167,7 @@ function App() {
 					clearCategory={clearCategory}
 				/>
 			</div>
-			<ClearAll setItems={setItems} setLocalStorage={setLocalStorage} />
+			<ButtonContainer setItems={setItems} setLocalStorage={setLocalStorage} />
 			<Footer />
 		</>
 	);

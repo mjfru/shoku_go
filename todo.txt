@@ -14,7 +14,7 @@ Functionality:
   - Utilize local storage -- DONE
   - Add Meal Planner Component
   - Add dropdown box for frequently bought items
-  - Restore default values button
+  - Restore default values button -- DONE
   - Move all categories into a <Categories> component
   - Implement a way to share the lists / screen
   - Toasts for item entry errors
@@ -22,5 +22,4 @@ Functionality:
 House-Keeping:
   - Clean up custom CSS variables, apply them
   - Look for redundant styling
-  - Combine selectors where possible
   - Host on Vercel, add to portfolio

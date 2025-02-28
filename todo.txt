@@ -5,7 +5,7 @@ Styling:
   - Custom inputs -- DONE
   - Footer arrangement -- DONE
   - Button shadows on 'Deletes' -- DONE
-  - Clear all & Restore defaults button style and placement
+  - Clear all & Restore defaults button style and placement -- DONE
   - Media queries for responsive design (primarily phone)
   - When meal planner is done, fix header to proper navigation
   - STRETCH: Cross-off animation
@@ -15,7 +15,7 @@ Functionality:
   - Add Meal Planner Component
   - Add dropdown box for frequently bought items
   - Restore default values button -- DONE
-  - Move all categories into a <Categories> component
+  - Move all categories into a <Categories> component -- DONE
   - Implement a way to share the lists / screen
   - Toasts for item entry errors
 

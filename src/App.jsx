@@ -88,8 +88,8 @@ function App() {
 
 	return (
 		<>
-      <MealPlanner />
 			<Header />
+      <MealPlanner />
 			<Categories
 				items={items}
 				addItem={addItem}

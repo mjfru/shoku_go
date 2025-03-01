@@ -17,30 +17,29 @@ const Meal = ({ day }) => {
 	return (
 		<div className="day-container">
 			<h2>{day}:</h2>
-			<h3>{inputMeal || `Meal needed for ${day}`}</h3>
-			<div>
-				<form onSubmit={handleSubmit}>
-					<label htmlFor="meal">Meal Name: </label>
-					<input
-						type="text"
-						value={meal}
-						onChange={(e) => setMeal(e.target.value)}
-					/>
-					<button type="submit" className="btn add-btn" disabled={inputMeal}>
-						Add
-					</button>
-					<button
-						className="btn"
-						onClick={() => {
-							setInputMeal("");
-							setMeal("");
-						}}
-            disabled={!inputMeal}
-					>
-						Clear
-					</button>
-				</form>
-			</div>
+			<h3>{inputMeal || ""}</h3>
+
+			<form onSubmit={handleSubmit}>
+				<input
+					type="text"
+					placeholder="New meal..."
+					value={meal}
+					onChange={(e) => setMeal(e.target.value)}
+				/>
+				<button type="submit" className="btn add-btn" disabled={inputMeal}>
+					Add
+				</button>
+				<button
+					className="btn"
+					onClick={() => {
+						setInputMeal("");
+						setMeal("");
+					}}
+					disabled={!inputMeal}
+				>
+					Clear
+				</button>
+			</form>
 		</div>
 	);
 };

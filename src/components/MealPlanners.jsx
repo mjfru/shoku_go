@@ -12,12 +12,14 @@ const MealPlanner = () => {
 	];
 
 	return (
-		<div className="meal-planner-container">
-
-			{days.map((day) => {
-				return <Meal day={day} key={day} />;
-			})}
-		</div>
+		<>
+			<h2>Dinners for the Week:</h2>
+			<div className="meal-planner-container">
+				{days.map((day) => {
+					return <Meal day={day} key={day} />;
+				})}
+			</div>
+		</>
 	);
 };
 

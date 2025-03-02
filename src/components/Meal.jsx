@@ -1,8 +1,29 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+const setLocalStorage = (meals) => {
+	localStorage.setItem("weeklyMeals", JSON.stringify(meals || ""));
+};
+
+const getLocalStorage = () => {
+	try {
+		const storedList = localStorage.getItem("weeklyMeals");
+		return storedList ? JSON.parse(storedList) : {};
+	} catch (error) {
+		console.error(
+			"Cannot retrieve previous data, restoring to defaults: ",
+			error
+		);
+		return {};
+	}
+};
 
 const Meal = ({ day }) => {
-	const [meal, setMeal] = useState("");
-	const [inputMeal, setInputMeal] = useState("");
+	const [meals, setMeals] = useState(getLocalStorage());
+	const [meal, setMeal] = useState(meals[day] || "");
+
+	useEffect(() => {
+		setLocalStorage(meals);
+	}, [meals]);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -10,35 +31,51 @@ const Meal = ({ day }) => {
 			//? Toast here
 			return;
 		}
-		setInputMeal(meal);
+		const updatedMeals = { ...meals, [day]: meal };
+		setMeals(updatedMeals);
+		setMeal("");
+	};
+
+	const handleClear = () => {
+		const updatedMeals = { ...meals };
+		delete updatedMeals[day];
+		setMeals(updatedMeals);
 		setMeal("");
 	};
 
 	return (
 		<div className="day-container">
-			<h2>{day}:</h2>
-			<h3>{inputMeal || ""}</h3>
-
+			<h3>{day}:</h3>
+			<h4 className={meals[day] ? "single-meal" : "empty-meal"}>
+				{meals[day]}
+			</h4>
 			<form onSubmit={handleSubmit}>
-				<input
-					type="text"
-					placeholder="New meal..."
-					value={meal}
-					onChange={(e) => setMeal(e.target.value)}
-				/>
-				<button type="submit" className="btn add-btn" disabled={inputMeal}>
-					Add
-				</button>
-				<button
-					className="btn"
-					onClick={() => {
-						setInputMeal("");
-						setMeal("");
-					}}
-					disabled={!inputMeal}
-				>
-					Clear
-				</button>
+				<div className="meal-input">
+					<input
+						type="text"
+						placeholder="New meal..."
+						value={meal}
+						style={{ display: meals[day] ? "none" : "flex" }}
+						onChange={(e) => setMeal(e.target.value)}
+					/>
+					{!meals[day] ? (
+						<button
+							type="submit"
+							className="btn add-btn"
+							disabled={!meal.trim()}
+						>
+							Add
+						</button>
+					) : (
+						<button
+							className="btn"
+							onClick={handleClear}
+							disabled={!meals[day]}
+						>
+							Clear
+						</button>
+					)}
+				</div>
 			</form>
 		</div>
 	);

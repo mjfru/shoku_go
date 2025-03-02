@@ -44,6 +44,11 @@ h1 {
 	gap: 0.5rem;
 }
 
+h2, h3, h4 {
+  text-align: center;
+  font-family: var(--main-font);
+}
+
 .header-container {
 	height: 12.5vh;
 	display: flex;
@@ -108,11 +113,11 @@ h1 {
 
 .category-container, .meal-planner-container {
 	margin: 0 auto;
-	margin-bottom: 2rem;
 	width: 75vw;
 }
 
 .category-container {
+  margin-bottom: 2rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	place-content: center;
@@ -386,14 +391,40 @@ input {
 .meal-planner-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: center;
   min-height: 50vh;
-  gap: 1rem;
+  column-gap: .5rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .day-container {
-  text-align: center;
-  max-height: 10rem;
+  height: 200px;
   min-width: 15rem;
+  padding: 20px;
   justify-content: space-around;
+}
+
+.day-container h3 {
+  text-align: center;
+	font-weight: 800;
+	font-family: var(--main-font);
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 5px;
+	margin-bottom: 0.25rem;
+}
+
+.single-meal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-transform: capitalize;
+  border-bottom: 2px dotted var(--secondary-text-color);
+}
+
+.meal-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

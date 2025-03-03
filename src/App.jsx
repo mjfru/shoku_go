@@ -25,7 +25,7 @@ const getLocalStorage = () => {
 		return storedList ? JSON.parse(storedList) : weeklyItems;
 	} catch (error) {
 		console.error(
-			"Cannot retrieve previous data, restoring to defaults: ",
+			"Cannot retrieve previous data, restoring to defaults.",
 			error
 		);
 		return weeklyItems;

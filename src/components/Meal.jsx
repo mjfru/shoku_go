@@ -1,29 +1,10 @@
-import { useEffect, useState } from "react";
-
-const setLocalStorage = (meals) => {
-	localStorage.setItem("weeklyMeals", JSON.stringify(meals || ""));
-};
-
-const getLocalStorage = () => {
-	try {
-		const storedList = localStorage.getItem("weeklyMeals");
-		return storedList ? JSON.parse(storedList) : {};
-	} catch (error) {
-		console.error(
-			"Cannot retrieve previous data, restoring to defaults: ",
-			error
-		);
-		return {};
-	}
-};
+import { useState } from "react";
 
 const Meal = ({ day }) => {
-	const [meals, setMeals] = useState(getLocalStorage());
-	const [meal, setMeal] = useState(meals[day] || "");
-
-	useEffect(() => {
-		setLocalStorage(meals);
-	}, [meals]);
+	// The actual list of submitted meals
+	const [meals, setMeals] = useState([]);
+	// The inputs for the meals
+	const [meal, setMeal] = useState("");
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -31,23 +12,23 @@ const Meal = ({ day }) => {
 			//? Toast here
 			return;
 		}
-		const updatedMeals = { ...meals, [day]: meal };
-		setMeals(updatedMeals);
+		setMeals((prevMeals) => {
+			return [...prevMeals, meal];
+		});
 		setMeal("");
 	};
 
 	const handleClear = () => {
-		const updatedMeals = { ...meals };
-		delete updatedMeals[day];
-		setMeals(updatedMeals);
-		setMeal("");
+		setMeals([]);
 	};
 
 	return (
 		<div className="day-container">
 			<h3>{day}:</h3>
-			<h4 className={meals[day] ? "single-meal" : "empty-meal"}>
-				{meals[day]}
+			<h4>
+				{meals.map((meal, index) => {
+					return <div key={index}>{meal}</div>;
+				})}
 			</h4>
 			<form onSubmit={handleSubmit}>
 				<div className="meal-input">
@@ -55,26 +36,14 @@ const Meal = ({ day }) => {
 						type="text"
 						placeholder="New meal..."
 						value={meal}
-						style={{ display: meals[day] ? "none" : "flex" }}
 						onChange={(e) => setMeal(e.target.value)}
 					/>
-					{!meals[day] ? (
-						<button
-							type="submit"
-							className="btn add-btn"
-							disabled={!meal.trim()}
-						>
-							Add
-						</button>
-					) : (
-						<button
-							className="btn"
-							onClick={handleClear}
-							disabled={!meals[day]}
-						>
-							Clear
-						</button>
-					)}
+					<button type="submit" className="btn add-btn">
+						Add
+					</button>
+					<button className="btn" onClick={handleClear}>
+						Clear
+					</button>
 				</div>
 			</form>
 		</div>

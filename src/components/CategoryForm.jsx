@@ -1,6 +1,26 @@
 import { nanoid } from "nanoid";
 import { useState } from "react";
 
+import {
+	produce,
+	bakery,
+	dryGoods,
+	protein,
+	dairy,
+	frozen,
+	other,
+} from "../data";
+
+const categoryOptions = {
+	produce,
+	bakery,
+	dryGoods,
+	protein,
+	dairy,
+	frozen,
+	other,
+};
+
 const CategoryForm = ({
 	categoryName,
 	categoryKey,
@@ -14,6 +34,8 @@ const CategoryForm = ({
 }) => {
 	const [item, setItem] = useState("");
 	const [quantity, setQuantity] = useState(1);
+
+	const optionsList = categoryOptions[categoryKey] || [];
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -52,7 +74,7 @@ const CategoryForm = ({
 									style={{
 										textDecoration: groceryItem.purchased && "line-through",
 										textDecorationThickness: "3px",
-                    textDecorationColor: "#3f3f3f"
+										textDecorationColor: "#3f3f3f",
 									}}
 								>
 									{groceryItem.name} ({groceryItem.quantity})
@@ -87,6 +109,16 @@ const CategoryForm = ({
 							// className="item-name"
 							onChange={(e) => setItem(e.target.value)}
 						/>
+						<select onChange={(e) => setItem(e.target.value)}>
+							<option value="">-- Common Items --</option>
+							{optionsList.map((item) => {
+								return (
+									<option value={item} key={item}>
+										{item}
+									</option>
+								);
+							})}
+						</select>
 						<button type="submit" className="btn add-btn">
 							Add
 						</button>

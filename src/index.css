@@ -329,6 +329,8 @@ input {
   justify-content: space-around;
 }
 
+/* Footer */
+
 .footer-container h3 {
 	font-family: monospace;
   font-weight: lighter;
@@ -427,4 +429,8 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.clear-meals {
+  margin-top: .5rem;
 }

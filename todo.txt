@@ -12,8 +12,9 @@ Styling:
 
 Functionality:
   - Utilize local storage -- DONE
-  - Add Meal Planner Component
-  - Add dropdown box for frequently bought items
+  - Add Meal Planner Component -- DONE
+  - Add dropdown box for frequently bought items -- DONE
+  - Add dropdown box for meals
   - Restore default values button -- DONE
   - Move all categories into a <Categories> component -- DONE
   - Implement a way to share the lists / screen

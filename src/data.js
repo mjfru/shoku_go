@@ -13,6 +13,38 @@ export const weeklyItems = {
 		{ id: nanoid(), name: "Ground turkey", quantity: 1, purchased: false },
 	],
 	dairy: [{ id: nanoid, name: "Yogurt", quantity: 6, purchased: false }],
-  frozen: [],
-  other: [],
+	frozen: [],
+	other: [],
 };
+
+export const produce = ["Apples", "Avocados", "Bananas", "Green Onions"];
+
+export const bakery = [
+	"Bagels",
+	"Sandwich Bread",
+	"Tortillas (Large)",
+	"Tortillas (Small)",
+];
+
+export const dryGoods = ["Black Beans", "White Rice"];
+
+export const protein = ["Ground Chicken", "Ground Turkey"];
+
+export const dairy = [
+	"Almond Milk",
+	"Eggs (Dozen)",
+	"Eggs (Half Dozen)",
+	"Milk (1/2 Gal)",
+	"Yogurt",
+	"Coffee Creamer",
+	"Parmigiano Reggiano",
+	"Shredded Cheese",
+	"Mozzarella (Whole)",
+	"Mozzarella (Shredded)",
+	"Oat Milk",
+	"Cream Cheese",
+];
+
+export const frozen = ["Frozen Corn", "Ice Cream"];
+
+export const other = ["Hand Soap", "Dish Sponge"];

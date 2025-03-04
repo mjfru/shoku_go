@@ -46,26 +46,44 @@ const Meal = ({ day }) => {
 		setLocalStorage(day, []);
 	};
 
+
 	return (
 		<div className="day-container">
 			<h3>{day}:</h3>
 			<h4>
 				{meals.map((meal, index) => {
-					return <div key={index}>{meal}</div>;
+					return (
+						<p className="" key={index}>
+							{meal}
+						</p>
+					);
 				})}
 			</h4>
 			<form onSubmit={handleSubmit}>
 				<div className="meal-input">
 					<input
 						type="text"
-						placeholder="New meal..."
+						placeholder={
+							meals.length <= 2 ? "New meal..." : "Maximum Meals Reached"
+						}
 						value={meal}
 						onChange={(e) => setMeal(e.target.value)}
 					/>
-					<button type="submit" className="btn add-btn">
+					<button
+						type="submit"
+						className="btn add-btn"
+						disabled={meals.length > 2}
+					>
 						Add
 					</button>
-					<button className="btn" onClick={handleClear}>
+				</div>
+				<div className="clear-meals clear-one-container">
+					<button
+						className="btn clear-one-btn"
+						onClick={handleClear}
+            
+						disabled={meals.length === 0}
+					>
 						Clear
 					</button>
 				</div>
@@ -75,3 +93,4 @@ const Meal = ({ day }) => {
 };
 
 export default Meal;
+

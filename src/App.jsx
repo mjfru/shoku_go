@@ -35,6 +35,15 @@ const getLocalStorage = () => {
 function App() {
 	// const [items, setItems] = useState(weeklyItems);
 	const [items, setItems] = useState(getLocalStorage());
+	const [display, setDisplay] = useState(true);
+
+	const toggleGrocery = () => {
+		setDisplay(true);
+	};
+
+	const toggleMeals = () => {
+		setDisplay(false);
+	};
 
 	const addItem = (category, itemName, itemQuantity) => {
 		const newItem = {
@@ -87,19 +96,29 @@ function App() {
 	};
 
 	return (
-		<>
-			<Header />
-      <MealPlanner />
-			<Categories
-				items={items}
-				addItem={addItem}
-				toggleItem={toggleItem}
-				removeItem={removeItem}
-				clearCategory={clearCategory}
-			/>
-			<ButtonContainer setItems={setItems} setLocalStorage={setLocalStorage} />
+		<div className="app-container">
+			<Header toggleGrocery={toggleGrocery} toggleMeals={toggleMeals} />
+			<div className="main-content">
+				{display ? (
+					<>
+						<Categories
+							items={items}
+							addItem={addItem}
+							toggleItem={toggleItem}
+							removeItem={removeItem}
+							clearCategory={clearCategory}
+						/>
+						<ButtonContainer
+							setItems={setItems}
+							setLocalStorage={setLocalStorage}
+						/>
+					</>
+				) : (
+					<MealPlanner />
+				)}
+			</div>
 			<Footer />
-		</>
+		</div>
 	);
 }
 

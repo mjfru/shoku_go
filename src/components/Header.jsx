@@ -1,4 +1,4 @@
-const Header = () => {
+const Header = ({ toggleGrocery, toggleMeals }) => {
 	return (
 		<div className="header-container">
 			<h1>
@@ -7,8 +7,8 @@ const Header = () => {
 				<span className="go-text">GO</span>
 			</h1>
 			<div className="header-buttons">
-				<button className="btn">Grocery List</button>
-				<button className="btn">Meal Planner</button>
+				<button className="btn" onClick={toggleGrocery}>Grocery List</button>
+				<button className="btn" onClick={toggleMeals}>Meal Planner</button>
 			</div>
 		</div>
 	);

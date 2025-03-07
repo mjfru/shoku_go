@@ -17,7 +17,7 @@ export const weeklyItems = {
 	other: [],
 };
 
-export const produce = ["Apples", "Avocados", "Bananas", "Green Onions"];
+export const produce = ["Apples", "Avocados", "Bananas", "Green Onions", "Kumquats"];
 
 export const bakery = [
 	"Bagels",

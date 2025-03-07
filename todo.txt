@@ -17,6 +17,7 @@ Functionality:
   - Add dropdown box for meals
   - Restore default values button -- DONE
   - Move all categories into a <Categories> component -- DONE
+  - Toggle between groceries and meals -- DONE
   - Implement a way to share the lists / screen
   - Toasts for item entry errors
 

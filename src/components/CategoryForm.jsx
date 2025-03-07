@@ -119,7 +119,7 @@ const CategoryForm = ({
 									setSelectOption(e.target.value);
 								}}
 							>
-								<option value="">Common Items</option>
+								<option value="">- Common Items -</option>
 								{optionsList.map((item) => {
 									return (
 										<option value={item} key={item}>

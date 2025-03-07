@@ -209,8 +209,8 @@ input[type="checkbox"] {
 
 .form-inputs {
 	display: flex;
-	justify-content: space-evenly;
-	align-items: flex-end;
+	justify-content: space-around;
+	align-items: center;
 	margin: 0.75rem auto;
 }
 
@@ -229,6 +229,12 @@ input[type="number"] {
 .name-add-container {
 	display: flex;
 	align-items: center;
+}
+
+.grocery-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
 }
 
 .items-container {
@@ -251,10 +257,11 @@ input[type="number"] {
 	border-radius: 4px;
 }
 
-input[type="text"] {
+input[type="text"], select {
 	height: 1.5rem;
-	width: 9rem;
+	width: 10rem;
 	padding: 0 0.5rem;
+  
 }
 
 .delete-btn, .clear-btn {
@@ -279,7 +286,7 @@ label {
 }
 
 label,
-input {
+input, select {
 	font-family: var(--main-font);
 }
 

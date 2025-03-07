@@ -34,6 +34,7 @@ const CategoryForm = ({
 }) => {
 	const [item, setItem] = useState("");
 	const [quantity, setQuantity] = useState(1);
+	const [selectOption, setSelectOption] = useState("");
 
 	const optionsList = categoryOptions[categoryKey] || [];
 
@@ -46,6 +47,7 @@ const CategoryForm = ({
 		addItem(categoryKey, item, quantity);
 		setItem("");
 		setQuantity(1);
+		setSelectOption("");
 	};
 
 	const handleClearCategory = (e) => {
@@ -102,23 +104,31 @@ const CategoryForm = ({
 						/>
 					</div>
 					<div className="name-add-container">
-						<input
-							type="text"
-							placeholder="Product name"
-							value={item}
-							// className="item-name"
-							onChange={(e) => setItem(e.target.value)}
-						/>
-						<select onChange={(e) => setItem(e.target.value)}>
-							<option value="">-- Common Items --</option>
-							{optionsList.map((item) => {
-								return (
-									<option value={item} key={item}>
-										{item}
-									</option>
-								);
-							})}
-						</select>
+						<div className="grocery-inputs">
+							<input
+								type="text"
+								placeholder="New Product"
+								value={item}
+								onChange={(e) => setItem(e.target.value)}
+							/>
+
+							<select
+                value={selectOption}
+								onChange={(e) => {
+									setItem(e.target.value);
+									setSelectOption(e.target.value);
+								}}
+							>
+								<option value="">Common Items</option>
+								{optionsList.map((item) => {
+									return (
+										<option value={item} key={item}>
+											{item}
+										</option>
+									);
+								})}
+							</select>
+						</div>
 						<button type="submit" className="btn add-btn">
 							Add
 						</button>

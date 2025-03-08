@@ -7,8 +7,12 @@ const Header = ({ toggleGrocery, toggleMeals }) => {
 				<span className="go-text">GO</span>
 			</h1>
 			<div className="header-buttons">
-				<button className="btn" onClick={toggleGrocery}>Grocery List</button>
-				<button className="btn" onClick={toggleMeals}>Meal Planner</button>
+				<div className="btn nav-btn" onClick={toggleGrocery}>
+					Grocery List
+				</div>
+				<div className="btn nav-btn" onClick={toggleMeals}>
+					Meal Planner
+				</div>
 			</div>
 		</div>
 	);

@@ -35,14 +35,22 @@ const getLocalStorage = () => {
 function App() {
 	// const [items, setItems] = useState(weeklyItems);
 	const [items, setItems] = useState(getLocalStorage());
-	const [display, setDisplay] = useState(true);
+	// Needs to be created before used in state:
+	const getDisplay = () => {
+		const storedDisplay = localStorage.getItem("displayState");
+		return storedDisplay !== null ? JSON.parse(storedDisplay) : true;
+	};
+	// Getting display state, allowing users to pick up on the component they left off on:
+	const [display, setDisplay] = useState(getDisplay());
 
 	const toggleGrocery = () => {
 		setDisplay(true);
+		localStorage.setItem("displayState", JSON.stringify(true));
 	};
 
 	const toggleMeals = () => {
 		setDisplay(false);
+		localStorage.setItem("displayState", JSON.stringify(false));
 	};
 
 	const addItem = (category, itemName, itemQuantity) => {

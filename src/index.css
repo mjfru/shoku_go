@@ -123,6 +123,13 @@ h2, h3, h4 {
 	border-radius: 5px;
 }
 
+.nav-btn {
+  font-size: 1rem;
+  padding: 1.5rem 2rem;
+  margin-left: 2rem;
+  color: var(--primary-btn-color);
+}
+
 .category-container, .meal-planner-container {
 	margin: 0 auto;
 	width: 75vw;

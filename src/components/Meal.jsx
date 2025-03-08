@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 //* As a result, we have seven arrays holding meals for each day of the week and can utilize that into our logic.
 const setLocalStorage = (day, meals) => {
 	const storedMeals = getLocalStorage();
-	console.log(meals);
+	// console.log(meals);
 	storedMeals[day] = meals;
 	localStorage.setItem("mealsOfTheWeek", JSON.stringify(storedMeals));
 };

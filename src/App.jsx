@@ -38,6 +38,7 @@ function App() {
 	// Needs to be created before used in state:
 	const getDisplay = () => {
 		const storedDisplay = localStorage.getItem("displayState");
+    // If there is no boolean value, default it to true to display the grocery list:
 		return storedDisplay !== null ? JSON.parse(storedDisplay) : true;
 	};
 	// Getting display state, allowing users to pick up on the component they left off on:
@@ -105,7 +106,7 @@ function App() {
 
 	return (
 		<div className="app-container">
-			<Header toggleGrocery={toggleGrocery} toggleMeals={toggleMeals} />
+			<Header toggleGrocery={toggleGrocery} toggleMeals={toggleMeals} display={display}/>
 			<div className="main-content">
 				{display ? (
 					<>

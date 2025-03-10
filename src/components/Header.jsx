@@ -1,4 +1,4 @@
-const Header = ({ toggleGrocery, toggleMeals }) => {
+const Header = ({ toggleGrocery, toggleMeals, display }) => {
 	return (
 		<div className="header-container">
 			<h1>
@@ -7,10 +7,10 @@ const Header = ({ toggleGrocery, toggleMeals }) => {
 				<span className="go-text">GO</span>
 			</h1>
 			<div className="header-buttons">
-				<div className="btn nav-btn" onClick={toggleGrocery}>
+				<div className={display ? "btn nav-btn nav-selected" : "btn nav-btn"} onClick={toggleGrocery}>
 					Grocery List
 				</div>
-				<div className="btn nav-btn" onClick={toggleMeals}>
+				<div className={!display ? "btn nav-btn nav-selected" : "btn nav-btn"} onClick={toggleMeals}>
 					Meal Planner
 				</div>
 			</div>

@@ -62,7 +62,7 @@ h2, h3, h4 {
 }
 
 .header-container {
-	height: 12.5vh;
+	min-height: 12.5vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -124,10 +124,20 @@ h2, h3, h4 {
 }
 
 .nav-btn {
-  font-size: 1rem;
-  padding: 1.5rem 2rem;
-  margin-left: 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  padding: 1rem 2rem;
+  border-radius: 0px;
   color: var(--primary-btn-color);
+}
+
+.nav-btn:hover {
+  background-color:#87b9d4;
+}
+
+.nav-selected {
+  border-bottom: 4px solid var(--primary-btn-color);
 }
 
 .category-container, .meal-planner-container {

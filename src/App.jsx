@@ -11,7 +11,7 @@ import ButtonContainer from "./components/ButtonContainer";
 // 3rd Party Libraries
 import { nanoid } from "nanoid";
 import Categories from "./components/Categories";
-import MealPlanner from "./components/MealPlanners";
+import MealPlanner from "./components/MealPlanner";
 
 // Saving data to local storage:
 const setLocalStorage = (items) => {

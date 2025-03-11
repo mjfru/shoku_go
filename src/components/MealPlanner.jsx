@@ -13,7 +13,7 @@ const MealPlanner = () => {
 
 	return (
 		<>
-			<h2>Dinners for the Week:</h2>
+			<h2>Meals for the Week</h2>
 			<div className="meal-planner-container">
 				{days.map((day) => {
 					return <Meal day={day} key={day} />;

@@ -50,15 +50,13 @@ const Meal = ({ day }) => {
 	return (
 		<div className="day-container">
 			<h3>{day}:</h3>
-			<h4>
 				{meals.map((meal, index) => {
 					return (
-						<p className="" key={index}>
+						<p className="single-meal" key={index}>
 							{meal}
 						</p>
 					);
 				})}
-			</h4>
 			<form onSubmit={handleSubmit}>
 				<div className="meal-input">
 					<input
@@ -80,8 +78,7 @@ const Meal = ({ day }) => {
 				<div className="clear-meals clear-one-container">
 					<button
 						className="btn clear-one-btn"
-						onClick={handleClear}
-            
+						onClick={handleClear}            
 						disabled={meals.length === 0}
 					>
 						Clear

@@ -18,7 +18,7 @@
 	--transparent-red: rgba(255, 0, 0, 0.5);
   --btn-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   --btn-active-shadow: box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-  --restore-btn: #A7C4A0;
+  --restore-btn: #91b687;
 
 	--gradient-1: linear-gradient(90deg, #6fa3bf, #f7ede2);
 	--gradient-2: linear-gradient(45deg, --primary-btn-color, #ff8c69);
@@ -56,6 +56,11 @@ h1 {
 	gap: 0.5rem;
 }
 
+h2 {
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
 h2, h3, h4 {
   text-align: center;
   font-family: var(--main-font);
@@ -72,21 +77,16 @@ h2, h3, h4 {
 	border-bottom: 4px solid var(--primary-btn-color);
 }
 
-.header-buttons {
-	display: flex;
-	justify-content: space-between;
-	min-width: 300px;
-}
 
 .shoku-text {
-	font-family: var(--main-font);
+  font-family: var(--main-font);
 	font-weight: 800;
 	font-style: italic;
 	color: var(--btn-text-color);
 }
 
 .go-text {
-	font-family: var(--accent-font);
+  font-family: var(--accent-font);
 	text-decoration: underline;
 	text-decoration-thickness: 0.45rem;
 	color: var(--primary-btn-color);
@@ -94,7 +94,7 @@ h2, h3, h4 {
 
 .shoku-text,
 .go-text {
-	position: relative;
+  position: relative;
 	font-size: 3rem;
 	font-weight: bold;
 	z-index: 1;
@@ -102,7 +102,7 @@ h2, h3, h4 {
 }
 
 .logo {
-	width: 6rem;
+  width: 6rem;
 	height: 6rem;
 	font-size: 3rem;
 	color: var(--transparent-red);
@@ -117,10 +117,15 @@ h2, h3, h4 {
 }
 
 .btn {
-	font-family: var(--main-font);
+  font-family: var(--main-font);
 	padding: 0.25rem 0.5rem;
 	cursor: pointer;
 	border-radius: 5px;
+}
+
+.header-buttons {
+  display: flex;
+  min-width: 300px;
 }
 
 .nav-btn {
@@ -129,7 +134,8 @@ h2, h3, h4 {
   letter-spacing: 1.25px;
   padding: 1rem 2rem;
   border-radius: 0px;
-  color: var(--primary-btn-color);
+  color: var(--btn-text-color);
+  text-shadow: .5px .5px 2px #3f3f3f;
 }
 
 .nav-btn:hover {
@@ -387,7 +393,7 @@ input, select {
 }
 
 .footer-links a:link {
-	font-family: monospace;
+	font-family: var(--item-font);
 	font-size: 1rem;
 	color: var(--btn-text-color);
 }
@@ -420,7 +426,7 @@ input, select {
 }
 
 .restore-btn:hover {
-  background-color: #91b687;
+  background-color: #7ca771;
 }
 
 .restore-btn:active {
@@ -456,10 +462,15 @@ input, select {
 }
 
 .single-meal {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 90%;
+  font-family: var(--item-font);
+  font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.1px;
   text-transform: capitalize;
   border-bottom: 2px dotted var(--secondary-text-color);
 }

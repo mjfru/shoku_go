@@ -8,6 +8,8 @@ const Categories = ({
 	clearCategory,
 }) => {
 	return (
+    <>
+    <h2>Grocery List</h2>
 		<div className="category-container">
 			<CategoryForm
 				categoryName="Produce"
@@ -35,7 +37,7 @@ const Categories = ({
 				categoryName="Dry Goods"
 				categoryKey="dryGoods"
 				categoryEmoji1="🥨"
-				categoryEmoji2="🧂"
+				categoryEmoji2="🥫"
 				type={items.dryGoods}
 				addItem={addItem}
 				toggleItem={toggleItem}
@@ -87,6 +89,7 @@ const Categories = ({
 				clearCategory={clearCategory}
 			/>
 		</div>
+    </>
 	);
 };
 

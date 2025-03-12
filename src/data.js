@@ -6,7 +6,7 @@ export const weeklyItems = {
 		{ id: nanoid(), name: "Apples", quantity: 4, purchased: false },
 	],
 	bakery: [
-		{ id: nanoid(), name: "Loaf of Bread", quantity: 1, purchased: false },
+		{ id: nanoid(), name: "Sandwich Bread", quantity: 1, purchased: false },
 	],
 	dryGoods: [],
 	protein: [
@@ -17,18 +17,41 @@ export const weeklyItems = {
 	other: [],
 };
 
-export const produce = ["Apples", "Avocados", "Bananas", "Green Onions", "Kumquats"];
+export const produce = [
+	"Apples",
+	"Avocados",
+	"Bananas",
+	"Green Onions",
+];
 
 export const bakery = [
 	"Bagels",
 	"Sandwich Bread",
+	"Artisanal Bread",
 	"Tortillas (Large)",
 	"Tortillas (Small)",
 ];
 
-export const dryGoods = ["Black Beans", "White Rice"];
+export const dryGoods = [
+	"Black Beans",
+	"White Rice",
+	"Chocolate Bar",
+	"Pretzels / Snack",
+	"Basmati Rice",
+	"Kidney Beans",
+	"Brown Rice",
+];
 
-export const protein = ["Ground Chicken", "Ground Turkey"];
+export const protein = [
+	"Ground Chicken",
+	"Ground Turkey",
+	"Chicken Breast",
+	"Chicken Thighs",
+	"Shaved Beef",
+	"Chicken Sausage (Italian)",
+	"Chicken Sausage (Spicy)",
+	"Turkey Bacon",
+];
 
 export const dairy = [
 	"Almond Milk",
@@ -38,13 +61,24 @@ export const dairy = [
 	"Yogurt",
 	"Coffee Creamer",
 	"Parmigiano Reggiano",
-	"Shredded Cheese",
+	"Sharp Cheddar (Block)",
+	"Sharp Cheddar (Shredded)",
+	"Mexican Cheese Blend",
+	"Colby Jack (Block)",
 	"Mozzarella (Whole)",
 	"Mozzarella (Shredded)",
 	"Oat Milk",
 	"Cream Cheese",
 ];
 
-export const frozen = ["Frozen Corn", "Ice Cream"];
+export const frozen = [
+	"Pizza",
+	"Corn",
+	"Broccoli",
+	"Green Beans",
+	"Carrots",
+	"Smoothie Fruit",
+	"Ice Cream",
+];
 
-export const other = ["Hand Soap", "Dish Sponge"];
+export const other = ["Hand Soap", "Dish Soap", "Dish Sponge"];

@@ -71,7 +71,7 @@ export const dairy = [
 	"Cream Cheese",
 ];
 
-export const frozen = [
+const allFrozen = [
 	"Pizza",
 	"Corn",
 	"Broccoli",
@@ -81,4 +81,13 @@ export const frozen = [
 	"Ice Cream",
 ];
 
+export const frozen = allFrozen.sort();
+
 export const other = ["Hand Soap", "Dish Soap", "Dish Sponge"];
+
+// Meals, unsorted:
+const allMeals = [ "Baked Tacos", "Lemon Chicken Scallopini", "Bulgogi", "Okinawan Taco Rice", "Gyudon" ]
+
+// Sorted meals for export:
+export const meals = allMeals.sort();
+console.log(meals);

@@ -22,7 +22,26 @@ export const produce = [
 	"Avocados",
 	"Bananas",
 	"Green Onions",
-];
+	"White Onions",
+	"Yellow Onions",
+	"Red Onions",
+	"Carrots",
+	"Parsely",
+	"Pears (Anjou)",
+	"Pears (Asian)",
+	"Jalapenos",
+	"Chilis",
+	"Bell Peppers",
+	"Mangos",
+	"Cabbage",
+	"Salad Mix",
+	"Kale (Bunch)",
+	"Kale (Package)",
+	"Spinach",
+	"Lettuce",
+	"Lemons",
+	"Limes",
+].sort();
 
 export const bakery = [
 	"Bagels",
@@ -30,7 +49,8 @@ export const bakery = [
 	"Artisanal Bread",
 	"Tortillas (Large)",
 	"Tortillas (Small)",
-];
+	"Sourdough Bread",
+].sort();
 
 export const dryGoods = [
 	"Black Beans",
@@ -40,7 +60,15 @@ export const dryGoods = [
 	"Basmati Rice",
 	"Kidney Beans",
 	"Brown Rice",
-];
+	"Cannellini Beans",
+	"Everything Bagel Seasoning",
+	"Salt",
+	"Flour",
+	"Taco Seasoning",
+	"Salsa",
+	"Tortilla Chips",
+	"Hot Sauce",
+].sort();
 
 export const protein = [
 	"Ground Chicken",
@@ -51,14 +79,14 @@ export const protein = [
 	"Chicken Sausage (Italian)",
 	"Chicken Sausage (Spicy)",
 	"Turkey Bacon",
-];
+].sort();
 
 export const dairy = [
 	"Almond Milk",
 	"Eggs (Dozen)",
 	"Eggs (Half Dozen)",
 	"Milk (1/2 Gal)",
-	"Yogurt",
+	"Greek Yogurt",
 	"Coffee Creamer",
 	"Parmigiano Reggiano",
 	"Sharp Cheddar (Block)",
@@ -69,9 +97,9 @@ export const dairy = [
 	"Mozzarella (Shredded)",
 	"Oat Milk",
 	"Cream Cheese",
-];
+].sort();
 
-const allFrozen = [
+export const frozen = [
 	"Pizza",
 	"Corn",
 	"Broccoli",
@@ -79,15 +107,25 @@ const allFrozen = [
 	"Carrots",
 	"Smoothie Fruit",
 	"Ice Cream",
-];
+].sort();
 
-export const frozen = allFrozen.sort();
+export const other = [
+	"Hand Soap",
+	"Dish Soap",
+	"Dish Sponge",
+	"Clorox Wipes",
+	"Swiffer Refills",
+	"Pledge",
+	"Toothpaste",
+	"Tooth Brush",
+	"Floss",
+].sort();
 
-export const other = ["Hand Soap", "Dish Soap", "Dish Sponge"];
-
-// Meals, unsorted:
-const allMeals = [ "Baked Tacos", "Lemon Chicken Scallopini", "Bulgogi", "Okinawan Taco Rice", "Gyudon" ]
-
-// Sorted meals for export:
-export const meals = allMeals.sort();
-console.log(meals);
+// Meals
+export const meals = [
+	"Baked Tacos",
+	"Lemon Chicken Scallopini",
+	"Bulgogi",
+	"Okinawan Taco Rice",
+	"Gyudon",
+].sort();

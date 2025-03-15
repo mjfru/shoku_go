@@ -122,7 +122,7 @@ export const other = [
 ].sort();
 
 // Meals
-export const meals = [
+export const mealIdeas = [
 	"Baked Tacos",
 	"Lemon Chicken Scallopini",
 	"Bulgogi",

@@ -270,7 +270,7 @@ input[type="number"] {
 	align-items: center;
 }
 
-.grocery-inputs {
+.grocery-inputs, .meal-inputs {
   display: flex;
   flex-direction: column;
   gap: .15rem;
@@ -445,10 +445,12 @@ input, select {
 }
 
 .day-container {
-  height: 200px;
-  min-width: 15rem;
-  padding: 20px;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
+	min-height: 16rem;
+	max-height: 25rem;
+	padding: 10px;
+	position: relative;
 }
 
 .day-container h3 {
@@ -475,7 +477,7 @@ input, select {
   border-bottom: 2px dotted var(--secondary-text-color);
 }
 
-.meal-input {
+.meal-form {
   display: flex;
   align-items: center;
   justify-content: center;

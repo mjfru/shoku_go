@@ -7,14 +7,14 @@ Styling:
   - Button shadows on 'Deletes' -- DONE
   - Clear all & Restore defaults button style and placement -- DONE
   - Media queries for responsive design (primarily phone)
-  - When meal planner is done, fix header to proper navigation
+  - When meal planner is done, fix header to proper navigation bar -- DONE
   - STRETCH: Cross-off animation
 
 Functionality:
   - Utilize local storage -- DONE
   - Add Meal Planner Component -- DONE
   - Add dropdown box for frequently bought items -- DONE
-  - Add dropdown box for meals
+  - Add dropdown box for meals -- DONE
   - Restore default values button -- DONE
   - Move all categories into a <Categories> component -- DONE
   - Toggle between groceries and meals -- DONE

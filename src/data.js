@@ -41,6 +41,11 @@ export const produce = [
 	"Lettuce",
 	"Lemons",
 	"Limes",
+	"White Potatoes",
+	"Red Potatoes",
+	"Cilantro",
+	"Leeks",
+	"Cherry Tomatoes",
 ].sort();
 
 export const bakery = [
@@ -50,6 +55,7 @@ export const bakery = [
 	"Tortillas (Large)",
 	"Tortillas (Small)",
 	"Sourdough Bread",
+	"Naan",
 ].sort();
 
 export const dryGoods = [
@@ -66,8 +72,17 @@ export const dryGoods = [
 	"Flour",
 	"Taco Seasoning",
 	"Salsa",
+	"Salsa Verde",
 	"Tortilla Chips",
 	"Hot Sauce",
+	"Granola Bars",
+	"Chocolate",
+	"Chocolate Chips",
+	"Pistachioes",
+	"Almonds",
+	"Dried Cranberries",
+	"Almond Butter",
+	"Tomato Paste",
 ].sort();
 
 export const protein = [
@@ -79,6 +94,9 @@ export const protein = [
 	"Chicken Sausage (Italian)",
 	"Chicken Sausage (Spicy)",
 	"Turkey Bacon",
+	"Ground Pork",
+	"Ground Beef",
+	"Pork Cutlets",
 ].sort();
 
 export const dairy = [
@@ -128,4 +146,13 @@ export const mealIdeas = [
 	"Bulgogi",
 	"Okinawan Taco Rice",
 	"Gyudon",
+	"Baked Chicken Katsu",
+	"Vodka Sauce Pasta Bake",
+	"Steak Street Tacos",
+	"Lettuce Wraps",
+	"Chicken Pot Pie",
+	"Ginger Chicken Udon",
+	"Black Bean Burgers",
+	"Chicken Ramen",
+	"Cacio e Pepe",
 ].sort();

@@ -67,6 +67,7 @@ h2, h3, h4 {
 }
 
 .header-container {
+  width: 100vw;
 	min-height: 12.5vh;
 	display: flex;
 	align-items: center;
@@ -488,4 +489,26 @@ input, select {
 
 .clear-meals {
   margin-top: .5rem;
+}
+
+/* Responsive Styles */
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+  body {
+      background-color: red;
+  }
+  body::before {
+      content: "Mobile Size"
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+      background-color: orange;
+  }
+  body::before {
+      content: "Tablet Size"
+  }
 }

@@ -35,7 +35,8 @@ const getLocalStorage = () => {
 function App() {
 	// const [items, setItems] = useState(weeklyItems);
 	const [items, setItems] = useState(getLocalStorage());
-	// Needs to be created before used in state:
+	
+  // Needs to be created before used in state:
 	const getDisplay = () => {
 		const storedDisplay = localStorage.getItem("displayState");
     // If there is no boolean value, default it to true to display the grocery list:

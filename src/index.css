@@ -437,12 +437,15 @@ input, select {
 
 .meal-planner-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
   min-height: 50vh;
-  column-gap: .5rem;
   gap: 2rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
+
+
 
 .day-container {
   display: flex;

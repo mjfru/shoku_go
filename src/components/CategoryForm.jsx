@@ -9,6 +9,7 @@ import {
 	dairy,
 	frozen,
 	other,
+	drinks,
 } from "../data";
 
 const categoryOptions = {
@@ -19,6 +20,7 @@ const categoryOptions = {
 	dairy,
 	frozen,
 	other,
+	drinks,
 };
 
 const CategoryForm = ({
@@ -113,7 +115,7 @@ const CategoryForm = ({
 							/>
 
 							<select
-                value={selectOption}
+								value={selectOption}
 								onChange={(e) => {
 									setItem(e.target.value);
 									setSelectOption(e.target.value);

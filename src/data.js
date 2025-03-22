@@ -15,7 +15,7 @@ export const weeklyItems = {
 	dairy: [{ id: nanoid, name: "Yogurt", quantity: 6, purchased: false }],
 	frozen: [],
 	other: [],
-  drinks: [],
+	drinks: [],
 };
 
 export const produce = [
@@ -66,6 +66,7 @@ export const dryGoods = [
 	"Pretzels / Snack",
 	"Basmati Rice",
 	"Kidney Beans",
+	"Pinto Beans",
 	"Brown Rice",
 	"Cannellini Beans",
 	"Everything Bagel Seasoning",
@@ -84,6 +85,9 @@ export const dryGoods = [
 	"Dried Cranberries",
 	"Almond Butter",
 	"Tomato Paste",
+	"Soy Sauce",
+	"Sesame Oil",
+	"Sesame Seeds",
 ].sort();
 
 export const protein = [
@@ -126,6 +130,7 @@ export const frozen = [
 	"Carrots",
 	"Smoothie Fruit",
 	"Ice Cream",
+	"Gyoza Wrappers",
 ].sort();
 
 export const other = [
@@ -141,20 +146,21 @@ export const other = [
 ].sort();
 
 export const drinks = [
-  "Kombucha",
-  "Coconut Water",
-  "Seltzer Water",
-  "Tonic Water",
-  "Distilled Water",
-  "White Wine",
-  "Red Wine",
-  "Craft / Seasonal Beer (6)",
-  "Fridge Beer (6) - Heineken",
-  "Fridge Beer (12) - Heineken",
-  "Fridge Beer (6) - Guinness",
-  "Fridge Beer (12) - Guinness",
+	"Kombucha",
+	"Coconut Water",
+	"Soda Water",
+	"Cranberry Juice",
+	"Orange Juice",
+	"Tonic Water",
+	"Distilled Water",
+	"White Wine",
+	"Red Wine",
+	"Craft / Seasonal Beer (6)",
+	"Fridge Beer (6) - Heineken",
+	"Fridge Beer (12) - Heineken",
+	"Fridge Beer (6) - Guinness",
+	"Fridge Beer (12) - Guinness",
 ].sort();
-
 
 // Meals
 export const mealIdeas = [

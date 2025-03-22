@@ -493,16 +493,6 @@ input, select {
 
 /* Responsive Styles */
 
-/* Phones */
-@media only screen and (max-width: 480px) {
-  body {
-      background-color: red;
-  }
-  body::before {
-      content: "Mobile Size"
-  }
-}
-
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   body {
@@ -511,4 +501,30 @@ input, select {
   body::before {
       content: "Tablet Size"
   }
+
+  .category-container {
+    padding: .5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: .25rem;
+  }
+
+  .global-btn-container {
+    margin-bottom: 1.5rem;
+    width: 60vw;
+  }
+  
+  .global-btn {
+    height: 3rem;
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 480px) {
+  body {
+      background-color: red;
+  }
+  body::before {
+      content: "Mobile Size"
+  }
+
 }

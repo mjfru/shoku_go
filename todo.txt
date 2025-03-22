@@ -8,6 +8,7 @@ Styling:
   - Clear all & Restore defaults button style and placement -- DONE
   - Media queries for responsive design (primarily phone)
   - When meal planner is done, fix header to proper navigation bar -- DONE
+  - Use new FavIcon
   - STRETCH: Cross-off animation
 
 Functionality:

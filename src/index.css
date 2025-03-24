@@ -178,6 +178,8 @@ h2, h3, h4 {
 .single-category {
 	min-height: 16rem;
 	max-height: 25rem;
+  min-width: 20rem;
+  max-width: 29rem;
 	padding: 20px;
 	position: relative;
 }
@@ -209,6 +211,7 @@ h2, h3, h4 {
 	width: 100%;
 	display: flex;
 	align-items: center;
+
 	gap: 10px;
 	padding: 0px 10px;
 	border-bottom: 2px dotted var(--secondary-text-color);
@@ -492,9 +495,12 @@ input, select {
 }
 
 /* Responsive Styles */
+/* Smaller Screens / Monitors ~1725px */
+/*! Fix Inputs Only */
 
 /* Tablets */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  /*! For Testing Only */
   body {
       background-color: orange;
   }
@@ -502,10 +508,47 @@ input, select {
       content: "Tablet Size"
   }
 
+  .delete-btn, .clear-one-btn {
+    padding: 0.15rem 0.25rem; 
+  }
+
   .category-container {
     padding: .5rem;
     grid-template-columns: 1fr 1fr;
     gap: .25rem;
+  }
+
+  .category-container h2 {
+    font-size: 1rem;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    margin-bottom: 0.25rem;
+  }
+  
+  .single-item p, .empty {
+	font-family: var(--item-font);
+	font-weight: 400;
+	font-size: .8rem;
+	letter-spacing: 0.1px;
+}
+
+  .form-inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.75rem auto;
+  }
+
+  .quantity-container {
+    margin-right: -1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="number"] {
+    width: 3rem;
+    height: 1.5rem;
+    text-align: center;
   }
 
   .global-btn-container {
@@ -516,15 +559,24 @@ input, select {
   .global-btn {
     height: 3rem;
   }
+
+
 }
 
 /* Phones */
 @media only screen and (max-width: 480px) {
+  /*! For Testing Only */
   body {
       background-color: red;
   }
   body::before {
       content: "Mobile Size"
+  }
+
+  .category-container {
+    padding: .5rem;
+    grid-template-columns: 1fr;
+    gap: .25rem;
   }
 
 }

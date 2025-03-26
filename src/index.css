@@ -263,6 +263,14 @@ input[type="checkbox"] {
 	align-items: center;
 }
 
+#quantity-label1 {
+  display: inline;
+}
+
+#quantity-label2 {
+  display: none;
+}
+
 input[type="number"] {
 	width: 3rem;
 	height: 1.5rem;
@@ -497,6 +505,25 @@ input, select {
 /* Responsive Styles */
 /* Smaller Screens / Monitors ~1725px */
 /*! Fix Inputs Only */
+@media only screen and (min-width: 1025px) and (max-width: 1725px) {
+  #quantity-label1 {
+    display: none;
+  }
+  
+  #quantity-label2 {
+    display: inline;
+  }
+
+  .form-inputs {
+    justify-content: space-between;
+  }
+
+  input[type="number"] {
+    width: 2rem;
+    height: 1.5rem;
+    text-align: center;
+  }
+}
 
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
@@ -513,7 +540,6 @@ input, select {
   }
 
   .category-container {
-    padding: .5rem;
     grid-template-columns: 1fr 1fr;
     gap: .25rem;
   }
@@ -533,16 +559,19 @@ input, select {
 }
 
   .form-inputs {
-    display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0.75rem auto;
+    margin: 0.5rem auto;
   }
 
   .quantity-container {
     margin-right: -1.5rem;
     display: flex;
     align-items: center;
+  }
+
+  #quantity-label1 {
+    display: none;
   }
   
   input[type="number"] {

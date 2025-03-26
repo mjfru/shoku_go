@@ -94,10 +94,12 @@ const CategoryForm = ({
 					})
 				)}
 			</div>
+
 			<form onSubmit={handleSubmit} className="form-container">
 				<div className="form-inputs">
 					<div className="quantity-container">
-						<label>Quantity: </label>
+						<label id="quantity-label1">Quantity: </label>
+						<label id="quantity-label2">Qty: </label>
 						<input
 							type="number"
 							min="1"

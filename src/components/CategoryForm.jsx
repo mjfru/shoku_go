@@ -109,13 +109,6 @@ const CategoryForm = ({
 					</div>
 					<div className="name-add-container">
 						<div className="grocery-inputs">
-							<input
-								type="text"
-								placeholder="New Product"
-								value={item}
-								onChange={(e) => setItem(e.target.value)}
-							/>
-
 							<select
 								value={selectOption}
 								onChange={(e) => {
@@ -132,6 +125,13 @@ const CategoryForm = ({
 									);
 								})}
 							</select>
+							<input
+								type="text"
+								placeholder="New Product"
+								value={item}
+								onChange={(e) => setItem(e.target.value)}
+							/>
+
 						</div>
 						<button type="submit" className="btn add-btn">
 							Add

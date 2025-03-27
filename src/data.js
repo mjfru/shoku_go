@@ -12,7 +12,7 @@ export const weeklyItems = {
 	protein: [
 		{ id: nanoid(), name: "Ground turkey", quantity: 1, purchased: false },
 	],
-	dairy: [{ id: nanoid, name: "Yogurt", quantity: 6, purchased: false }],
+	dairy: [{ id: nanoid, name: "Greek Yogurt", quantity: 6, purchased: false }],
 	frozen: [],
 	other: [],
 	drinks: [],

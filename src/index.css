@@ -506,24 +506,33 @@ input, select {
 /* Smaller Screens / Monitors ~1725px */
 /*! Fix Inputs Only */
 @media only screen and (min-width: 1025px) and (max-width: 1725px) {
-  #quantity-label1 {
-    display: none;
+
+  .category-container h2 {
+    font-size: 1.1rem;
   }
-  
-  #quantity-label2 {
-    display: inline;
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .form-inputs {
     justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quantity-container {
+    margin-bottom: .15rem;
   }
 
   input[type="number"] {
-    width: 2rem;
-    height: 1.5rem;
-    text-align: center;
+    width: 2.5rem;
+    height: 1.25rem;
   }
 }
+
+/* 1425px, quantity / qty collapses too much */
 
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
@@ -552,14 +561,13 @@ input, select {
   }
   
   .single-item p, .empty {
-	font-family: var(--item-font);
 	font-weight: 400;
 	font-size: .8rem;
 	letter-spacing: 0.1px;
-}
+  }
 
   .form-inputs {
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0.5rem auto;
   }
@@ -588,12 +596,12 @@ input, select {
   .global-btn {
     height: 3rem;
   }
-
-
 }
 
+/* 660px, 2 columns layout should disappear */
+
 /* Phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 660px) {
   /*! For Testing Only */
   body {
       background-color: red;
@@ -603,9 +611,25 @@ input, select {
   }
 
   .category-container {
+    /* width: 100vw; */
     padding: .5rem;
     grid-template-columns: 1fr;
     gap: .25rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-inputs {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quantity-container {
+    margin-bottom: .15rem;
   }
 
 }

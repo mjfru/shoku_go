@@ -627,8 +627,54 @@ input, select {
       content: "Mobile Size"
   }
 
+  h1 {
+    margin: .5rem;
+  }
+    
+  .header-container {
+    min-height: 10vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: .5rem 0;
+  }
+  
+  .shoku-text,
+  .go-text {
+    font-size: 2rem;
+  }
+  
+  .logo {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    left: 30%;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    min-width: 170px;
+    max-width: 200px;
+  }
+  
+  .nav-btn {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: .5rem 1rem;
+    border-radius: 0px;
+    color: var(--btn-text-color);
+    text-shadow: .5px .5px 2px #3f3f3f;
+  }
+  
+  .nav-selected {
+    border-left: 3px solid var(--primary-btn-color);
+    border-bottom: none;
+    background-color: #87b9d4;
+  }
+
   .category-container {
-    /* width: 100vw; */
     padding: .5rem;
     grid-template-columns: 1fr;
     gap: .25rem;

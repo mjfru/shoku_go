@@ -44,9 +44,12 @@ export const produce = [
 	"Limes",
 	"White Potatoes",
 	"Red Potatoes",
+	"Yellow Potatoes",
 	"Cilantro",
 	"Leeks",
 	"Cherry Tomatoes",
+	"Basil",
+	"Rosemary",
 ].sort();
 
 export const bakery = [

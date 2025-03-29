@@ -457,8 +457,6 @@ input, select {
   justify-content: center;
 }
 
-
-
 .day-container {
   display: flex;
   justify-content: space-between;
@@ -590,11 +588,29 @@ input, select {
 
   .global-btn-container {
     margin-bottom: 1.5rem;
-    width: 60vw;
   }
   
+  .footer-container {
+    height: 8vh;
+  }
+  
+  .footer-container h3 {
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+  
+  .footer-links {
+    gap: 1.5rem;
+  }
+  
+  .footer-links a:link {
+    font-size: 1rem;
+  }
+    
   .global-btn {
-    height: 3rem;
+    width: 11rem;
+    height: 2.5rem;
+    font-size: .9rem;
   }
 }
 
@@ -613,6 +629,14 @@ input, select {
 
   #quantity-label2 {
     display: inline-block;
+  }
+
+  .global-btn-container {
+    width: 100vw;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -699,4 +723,11 @@ input, select {
     display: inline-block;
   }
 
+  .global-btn-container {
+    width: 100vw;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+  }
 }

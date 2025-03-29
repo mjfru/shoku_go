@@ -62,14 +62,6 @@ const Meal = ({ day }) => {
 			<form onSubmit={handleSubmit}>
 				<div className="meal-form">
 					<div className="meal-inputs">
-						<input
-							type="text"
-							placeholder={
-								meals.length <= 2 ? "New meal..." : "Maximum Meals Reached"
-							}
-							value={meal}
-							onChange={(e) => setMeal(e.target.value)}
-						/>
 						<select
 							value={selectOption}
 							onChange={(e) => {
@@ -86,6 +78,14 @@ const Meal = ({ day }) => {
 								);
 							})}
 						</select>
+						<input
+							type="text"
+							placeholder={
+								meals.length <= 2 ? "New meal..." : "Maximum Meals Reached"
+							}
+							value={meal}
+							onChange={(e) => setMeal(e.target.value)}
+						/>
 					</div>
 					<button
 						type="submit"

@@ -379,6 +379,7 @@ input, select {
 
 /* Footer */
 .footer-container {
+  width: 100vw;
 	height: 10vh;
 	background-color: #6fa3bf;
 	border-top: 4px solid var(--primary-btn-color);
@@ -504,7 +505,7 @@ input, select {
 /* Smaller Screens / Monitors ~1725px */
 /*! Fix Inputs Only */
 @media only screen and (min-width: 1025px) and (max-width: 1725px) {
-
+  /** Grocery */
   .category-container h2 {
     font-size: 1.1rem;
   }
@@ -528,6 +529,8 @@ input, select {
     width: 2.5rem;
     height: 1.25rem;
   }
+
+  /** Meal Planner */
 }
 
 /* 1425px, quantity / qty collapses too much */
@@ -541,7 +544,7 @@ input, select {
   body::before {
       content: "Tablet Size"
   }
-
+    /** Grocery */
   .delete-btn, .clear-one-btn {
     padding: 0.15rem 0.25rem; 
   }
@@ -589,9 +592,27 @@ input, select {
   .global-btn-container {
     margin-bottom: 1.5rem;
   }
-  
+
+  .global-btn {
+    width: 11rem;
+    height: 2.5rem;
+    font-size: .9rem;
+  }
+
+  /** Meal Planner */
+  .meal-planner-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+    
+  .day-container h3 {
+    text-decoration-thickness: 2px;
+    margin-bottom: 0.2rem;
+  }
+
+  /** Footer  */
   .footer-container {
-    height: 8vh;
+    height: 10vh;
   }
   
   .footer-container h3 {
@@ -606,16 +627,12 @@ input, select {
   .footer-links a:link {
     font-size: 1rem;
   }
-    
-  .global-btn {
-    width: 11rem;
-    height: 2.5rem;
-    font-size: .9rem;
-  }
+
 }
 
 
 @media only screen and (min-width: 661px) and (max-width: 970px) {
+  /** Grocery */
   .form-container {
     display: flex;
     flex-direction: column;
@@ -638,6 +655,11 @@ input, select {
     align-items: center;
     justify-content: center;
   }
+
+  /** Meal Planner */
+  .meal-planner-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* 660px, 2 columns layout should disappear */
@@ -650,7 +672,7 @@ input, select {
   body::before {
       content: "Mobile Size"
   }
-
+  /** Header  */
   h1 {
     margin: .5rem;
   }
@@ -698,6 +720,7 @@ input, select {
     background-color: #87b9d4;
   }
 
+  /** Grocery  */
   .category-container {
     padding: .5rem;
     grid-template-columns: 1fr;
@@ -729,5 +752,15 @@ input, select {
     gap: .5rem;
     align-items: center;
     justify-content: center;
+  }
+
+  /** Meal Planner */
+  .meal-planner-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .day-container {
+    min-height: 18rem;
   }
 }

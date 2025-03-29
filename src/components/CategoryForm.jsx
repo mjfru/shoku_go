@@ -63,7 +63,7 @@ const CategoryForm = ({
 				{categoryEmoji1} {categoryName} {categoryEmoji2}
 			</h2>
 			<div className="items-container">
-				{type.length === 0 ? (
+				{!type || type.length === 0 ? (
 					<p className="empty">List is empty!</p>
 				) : (
 					type.map((groceryItem) => {

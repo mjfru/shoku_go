@@ -18,7 +18,7 @@ Functionality:
   - Restore default values button -- DONE
   - Move all categories into a <Categories> component -- DONE
   - Toggle between groceries and meals -- DONE
-  - Fix horizonal scroll for overflow
+  - Fix horizonal scroll for overflow -- DONE
   - Implement a way to share the lists / screen
   - Toasts for item entry errors
   - Hide meal inputs when maximum reached

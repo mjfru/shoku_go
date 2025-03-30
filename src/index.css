@@ -74,8 +74,11 @@ h2, h3, h4 {
 	justify-content: space-evenly;
 	background-color: #6fa3bf;
 	margin-bottom: 2rem;
-	padding: 0.5rem 0;
+	padding: 0.25rem 0;
 	border-bottom: 4px solid var(--primary-btn-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 
@@ -211,7 +214,6 @@ h2, h3, h4 {
 	width: 100%;
 	display: flex;
 	align-items: center;
-
 	gap: 10px;
 	padding: 0px 10px;
 	border-bottom: 2px dotted var(--secondary-text-color);

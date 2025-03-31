@@ -27,3 +27,9 @@ House-Keeping:
   - Clean up custom CSS variables, apply them
   - Look for redundant styling
   - Host on Vercel, add to portfolio
+
+Observations after uploading:
+  - Meal / Day sizing not great on my phone
+  - Remember to remove testing colors
+  - Fix width / height for header and Footer
+  - Consider using a smaller button ('X'?) instead of 'Delete' for smaller screens

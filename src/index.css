@@ -540,12 +540,12 @@ input, select {
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
   /*! For Testing Only */
-  body {
+  /* body {
       background-color: orange;
   }
   body::before {
       content: "Tablet Size"
-  }
+  } */
     /** Grocery */
   .delete-btn, .clear-one-btn {
     padding: 0.15rem 0.25rem; 
@@ -629,9 +629,7 @@ input, select {
   .footer-links a:link {
     font-size: 1rem;
   }
-
 }
-
 
 @media only screen and (min-width: 661px) and (max-width: 970px) {
   /** Grocery */
@@ -758,11 +756,40 @@ input, select {
 
   /** Meal Planner */
   .meal-planner-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: .5rem;
   }
 
   .day-container {
     min-height: 18rem;
+
+  }
+  
+  .day-container h3 {
+    font-weight: 800;
+    text-decoration-thickness: 2px;
+  }
+  
+  .single-meal {
+    width: 95%;
+    font-size: .9rem;
+  }
+
+  /** Footer */
+  .footer-container {
+    height: 7.5vh;
+  }
+  
+  .footer-container h3 {
+    letter-spacing: 1px;
+    font-size: .75rem;
+  }
+  
+  .footer-links {
+    gap: 1.5rem;
+  }
+  
+  .footer-links a:link {
+    font-size: .5rem;
   }
 }

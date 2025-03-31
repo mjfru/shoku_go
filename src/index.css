@@ -666,12 +666,12 @@ input, select {
 /* Phones */
 @media only screen and (max-width: 660px) {
   /*! For Testing Only */
-  body {
+  /* body {
       background-color: red;
   }
   body::before {
       content: "Mobile Size"
-  }
+  } */
   /** Header  */
   h1 {
     margin: .5rem;

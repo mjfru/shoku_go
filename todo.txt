@@ -26,10 +26,10 @@ Functionality:
 House-Keeping:
   - Clean up custom CSS variables, apply them
   - Look for redundant styling
-  - Host on Vercel, add to portfolio
+  - Host on Vercel, add to portfolio -- HOSTED
 
 Observations after uploading:
-  - Meal / Day sizing not great on my phone
-  - Remember to remove testing colors
-  - Fix width / height for header and Footer
+  - Meal / Day sizing not great on my phone -- FIXED
+  - Remember to remove testing colors -- FIXED
+  - Fix width / height for header and Footer -- FIXED
   - Consider using a smaller button ('X'?) instead of 'Delete' for smaller screens

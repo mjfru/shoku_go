@@ -33,3 +33,4 @@ Observations after uploading:
   - Remember to remove testing colors -- FIXED
   - Fix width / height for header and Footer -- FIXED
   - Consider using a smaller button ('X'?) instead of 'Delete' for smaller screens
+  - Phone-sizes: Logo appears lower than it should on actual phones, but not on dev tools

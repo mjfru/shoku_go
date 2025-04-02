@@ -9,9 +9,7 @@ export const weeklyItems = {
 		{ id: nanoid(), name: "Sandwich Bread", quantity: 1, purchased: false },
 	],
 	dryGoods: [],
-	protein: [
-		{ id: nanoid(), name: "Ground turkey", quantity: 1, purchased: false },
-	],
+	protein: [],
 	dairy: [{ id: nanoid, name: "Greek Yogurt", quantity: 6, purchased: false }],
 	frozen: [],
 	other: [],
@@ -50,6 +48,9 @@ export const produce = [
 	"Cherry Tomatoes",
 	"Basil",
 	"Rosemary",
+	"Garlic (Bunch)",
+	"Garlic (Bulb)",
+	"Ginger",
 ].sort();
 
 export const bakery = [
@@ -91,6 +92,8 @@ export const dryGoods = [
 	"Soy Sauce",
 	"Sesame Oil",
 	"Sesame Seeds",
+	"Enchilada Sauce",
+	"Pasta",
 ].sort();
 
 export const protein = [

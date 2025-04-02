@@ -81,7 +81,7 @@ const CategoryForm = ({
 										textDecorationColor: "#3f3f3f",
 									}}
 								>
-									{groceryItem.name} ({groceryItem.quantity})
+									({groceryItem.quantity}) {groceryItem.name} 
 								</p>
 								<button
 									className="btn delete-btn"

@@ -18,3 +18,5 @@ const takeScreenShot = (targetDiv, fileName = "screenshot.png") => {
 };
 
 export default takeScreenShot;
+
+// Add button and handler in menu planner and grocery list

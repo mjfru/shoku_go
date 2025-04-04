@@ -78,7 +78,7 @@ const Categories = ({
 					clearCategory={clearCategory}
 				/>
 				<CategoryForm
-					categoryName="Household Goods"
+					categoryName="Household"
 					categoryKey="other"
 					categoryEmoji1="💡"
 					categoryEmoji2="🧼"

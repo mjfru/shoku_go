@@ -81,7 +81,6 @@ h2, h3, h4 {
   z-index: 10;
 }
 
-
 .shoku-text {
   font-family: var(--main-font);
 	font-weight: 800;
@@ -505,11 +504,10 @@ input, select {
 
 /* Responsive Styles */
 /* Smaller Screens / Monitors ~1725px */
-/*! Fix Inputs Only */
 @media only screen and (min-width: 1025px) and (max-width: 1725px) {
   /** Grocery */
   .category-container h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .form-container {
@@ -558,8 +556,8 @@ input, select {
 
   .category-container h2 {
     font-size: 1rem;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 5px;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
     margin-bottom: 0.25rem;
   }
   
@@ -631,7 +629,32 @@ input, select {
   }
 }
 
-@media only screen and (min-width: 661px) and (max-width: 970px) {
+@media only screen and (min-width: 660px) and (max-width: 970px) {
+  h1 {
+    margin: .5rem;
+  }
+
+  .header-container {
+    min-height: 10vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    padding: .5rem 0;
+  }
+
+  .shoku-text,
+  .go-text {
+    font-size: 2rem;
+  }
+  
+  .logo {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    left: 30%;
+  }
+
   /** Grocery */
   .form-container {
     display: flex;
@@ -722,9 +745,17 @@ input, select {
 
   /** Grocery  */
   .category-container {
+    width: 95vw;
     padding: .5rem;
     grid-template-columns: 1fr;
     gap: .25rem;
+  }
+
+  .category-container h2 {
+    font-size: .8rem;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    margin-bottom: 0.15rem;
   }
 
   .form-container {
@@ -762,7 +793,6 @@ input, select {
 
   .day-container {
     min-height: 18rem;
-
   }
   
   .day-container h3 {
@@ -786,7 +816,7 @@ input, select {
   }
   
   .footer-links {
-    gap: 1.5rem;
+    gap: 1rem;
   }
   
   .footer-links a:link {

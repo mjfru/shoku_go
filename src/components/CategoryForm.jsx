@@ -59,7 +59,7 @@ const CategoryForm = ({
 
 	return (
 		<div className="single-category">
-			<h2>
+			<h2 id="category-header">
 				{categoryEmoji1} {categoryName} {categoryEmoji2}
 			</h2>
 			<div className="items-container">

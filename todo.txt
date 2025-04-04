@@ -34,3 +34,5 @@ Observations after uploading:
   - Fix width / height for header and Footer -- FIXED
   - Consider using a smaller button ('X'?) instead of 'Delete' for smaller screens
   - Phone-sizes: Logo appears lower than it should on actual phones, but not on dev tools
+  - Header still too large on tablet format
+  - Item and header font smaller, category size wider on phone format

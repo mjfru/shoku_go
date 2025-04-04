@@ -51,6 +51,8 @@ export const produce = [
 	"Garlic (Bunch)",
 	"Garlic (Bulb)",
 	"Ginger",
+	"Green Beans",
+	"Snow Peas",
 ].sort();
 
 export const bakery = [
@@ -61,13 +63,16 @@ export const bakery = [
 	"Tortillas (Small)",
 	"Sourdough Bread",
 	"Naan",
+	"Hoagie Rolls",
+	"Hamburger Buns",
+	"Sausage Rolls",
 ].sort();
 
 export const dryGoods = [
 	"Black Beans",
 	"White Rice",
 	"Chocolate Bar",
-	"Pretzels / Snack",
+	"Pretzels",
 	"Basmati Rice",
 	"Kidney Beans",
 	"Pinto Beans",
@@ -94,6 +99,9 @@ export const dryGoods = [
 	"Sesame Seeds",
 	"Enchilada Sauce",
 	"Pasta",
+	"Chicken Broth",
+	"Hot Cocoa Mix",
+	"Snacks",
 ].sort();
 
 export const protein = [
@@ -126,6 +134,7 @@ export const dairy = [
 	"Mozzarella (Shredded)",
 	"Oat Milk",
 	"Cream Cheese",
+	"Parmesan Cheese (Block)",
 ].sort();
 
 export const frozen = [
@@ -201,4 +210,6 @@ export const mealIdeas = [
 	"Honey Garlic Chicken",
 	"Red Beans & Rice",
 	"Risotto",
+	"(Chicken) Cheesesteaks",
+	"Asian Meatball Soup",
 ].sort();

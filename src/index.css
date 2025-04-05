@@ -685,7 +685,6 @@ input, select {
   }
 }
 
-/* 660px, 2 columns layout should disappear */
 /* Phones */
 @media only screen and (max-width: 660px) {
   /*! For Testing Only */
@@ -767,6 +766,11 @@ input, select {
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  input[type="checkbox"] {
+    height: 1.5rem;
+    width: 1.5rem;
   }
 
   .quantity-container {

@@ -4,11 +4,14 @@ export const weeklyItems = {
 	produce: [
 		{ id: nanoid(), name: "Avocados", quantity: 4, purchased: false },
 		{ id: nanoid(), name: "Apples", quantity: 4, purchased: false },
+		{ id: nanoid(), name: "Bananas", quantity: 5, purchased: false },
 	],
 	bakery: [
 		{ id: nanoid(), name: "Sandwich Bread", quantity: 1, purchased: false },
 	],
-	dryGoods: [],
+	dryGoods: [
+		{ id: nanoid(), name: "Chicken Broth", quantity: 1, purchased: false },
+	],
 	protein: [],
 	dairy: [{ id: nanoid, name: "Greek Yogurt", quantity: 6, purchased: false }],
 	frozen: [],
@@ -212,4 +215,8 @@ export const mealIdeas = [
 	"Risotto",
 	"(Chicken) Cheesesteaks",
 	"Asian Meatball Soup",
+	"Pinto Beans & Rice",
+	"Enchilada Rice",
+	"Tortellini & Sausage Soup",
+	"Mushroom & Garlic Spaghetti",
 ].sort();

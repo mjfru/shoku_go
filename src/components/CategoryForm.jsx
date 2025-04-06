@@ -1,5 +1,7 @@
 import { nanoid } from "nanoid";
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 import {
 	produce,
@@ -88,6 +90,12 @@ const CategoryForm = ({
 									onClick={() => removeItem(categoryKey, groceryItem.id)}
 								>
 									Delete
+								</button>
+								<button
+									id="small-delete-btn"
+									onClick={() => removeItem(categoryKey, groceryItem.id)}
+								>
+									<FontAwesomeIcon icon={faTrash} />
 								</button>
 							</div>
 						);

@@ -319,16 +319,32 @@ input[type="text"], select {
 	background-color: #d46a6a;
 	color: var(--btn-text-color);
 	border: transparent;
-	border-radius: 5px;
   box-shadow: var(--btn-shadow);
 	transition: 0.25s;
 }
 
-.delete-btn:hover, .clear-btn:hover {
+/* Use for smaller tablets / phones */
+#small-delete-btn {
+  all: unset;
+  display: inline-flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  background-color: #d46a6a;
+  color: var(--btn-text-color);
+  box-shadow: var(--btn-shadow);
+  cursor: pointer;
+}
+
+.delete-btn:hover, .clear-btn:hover, #small-delete-btn:hover {
 	background-color: #b65454;
 }
 
-.delete-btn:active, .clear-btn:active {
+.delete-btn:active, .clear-btn:active, #small-delete-btn:active {
   box-shadow: var(--btn-active-shadow);
 }
 

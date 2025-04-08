@@ -220,3 +220,5 @@ export const mealIdeas = [
 	"Tortellini & Sausage Soup",
 	"Mushroom & Garlic Spaghetti",
 ].sort();
+
+export const mealList = [{ name: "", url: "" }, ].sort();

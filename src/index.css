@@ -671,9 +671,9 @@ input, select {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 5%;
+    min-width: 1.75rem;
+    min-height: 1.75rem;
+    border-radius: 50%;
     font-size: 1rem;
     background-color: #d46a6a;
     color: var(--btn-text-color);

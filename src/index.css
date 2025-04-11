@@ -671,8 +671,8 @@ input, select {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    min-width: 1.75rem;
-    min-height: 1.75rem;
+    max-width: 1.75rem;
+    max-height: 1.75rem;
     border-radius: 50%;
     font-size: 1rem;
     background-color: #d46a6a;

@@ -34,9 +34,9 @@ Observations after uploading:
   - Meal / Day sizing not great on my phone -- FIXED
   - Remember to remove testing colors -- FIXED
   - Fix width / height for header and Footer (phone) -- FIXED
-  - Fix width / height for header and Footer (tablet) -- Header FIX / Footer IN PROGRESS...
+  - Fix width / height for header and Footer (tablet) -- Header FIXED / Footer IN PROGRESS...(tablet only)
   - Consider using a smaller button ('X'?) instead of 'Delete' for smaller screens -- DONE
   - Phone-sizes: Logo appears lower than it should on actual phones, but not on dev tools
   - Header still too large on tablet format -- FIXED
   - Item and header font smaller, category size wider on phone format -- FIXED
-  - New delete button appears to be just slightly off centre
+  - New delete button appears to be just slightly off centre -- FIXED

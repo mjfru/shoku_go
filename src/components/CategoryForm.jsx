@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 import {
 	produce,
@@ -83,8 +83,9 @@ const CategoryForm = ({
 										textDecorationColor: "#3f3f3f",
 									}}
 								>
-									({groceryItem.quantity}) {groceryItem.name} 
+									({groceryItem.quantity}) {groceryItem.name}
 								</p>
+
 								<button
 									className="btn delete-btn"
 									onClick={() => removeItem(categoryKey, groceryItem.id)}
@@ -139,7 +140,6 @@ const CategoryForm = ({
 								value={item}
 								onChange={(e) => setItem(e.target.value)}
 							/>
-
 						</div>
 						<button type="submit" className="btn add-btn">
 							Add

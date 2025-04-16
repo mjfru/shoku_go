@@ -48,7 +48,7 @@ export const produce = [
 	"Yellow Potatoes",
 	"Cilantro",
 	"Leeks",
-	"Cherry Tomatoes",
+	"Cherry/Grape Tomatoes",
 	"Basil",
 	"Rosemary",
 	"Garlic (Bunch)",
@@ -56,6 +56,7 @@ export const produce = [
 	"Ginger",
 	"Green Beans",
 	"Snow Peas",
+	"Sweet Potatoes (Bag)",
 ].sort();
 
 export const bakery = [
@@ -105,6 +106,11 @@ export const dryGoods = [
 	"Chicken Broth",
 	"Hot Cocoa Mix",
 	"Snacks",
+	"Canned San Marzanos",
+	"Honey",
+	"Curry Sauce",
+	"Italian Bread Crumbs",
+	"Panko",
 ].sort();
 
 export const protein = [
@@ -138,6 +144,7 @@ export const dairy = [
 	"Oat Milk",
 	"Cream Cheese",
 	"Parmesan Cheese (Block)",
+	"Goat Cheese",
 ].sort();
 
 export const frozen = [
@@ -221,4 +228,42 @@ export const mealIdeas = [
 	"Mushroom & Garlic Spaghetti",
 ].sort();
 
-export const mealList = [{ name: "", url: "" }, ].sort();
+export const mealList = [
+	{ name: "Baked Tacos", url: "" },
+	{ name: "Lemon Chicken Scallopini", url: "" },
+	{ name: "Bulgogi", url: "" },
+	{ name: "Okinawan Taco Rice", url: "" },
+	{ name: "Gyudon", url: "" },
+	{ name: "Baked Chicken Katsu", url: "" },
+	{ name: "Vodka Sauce Pasta Bake", url: "" },
+	{ name: "Steak Street Tacos", url: "" },
+	{ name: "Chicken Pot Pie", url: "" },
+	{ name: "Ginger Chicken Udon", url: "" },
+	{ name: "Black Bean Burgers", url: "" },
+	{ name: "Chicken Ramen", url: "" },
+	{ name: "Cacio e Pepe", url: "" },
+	{ name: "Gyoza", url: "" },
+	{ name: "Turkey Meatballs", url: "" },
+	{ name: "Turkey Black Bean Bake", url: "" },
+	{ name: "Baked Ziti", url: "" },
+	{ name: "Stuffed Peppers", url: "" },
+	{ name: "Lettuce Wraps", url: "" },
+	{ name: "Broccoli Cheddar Soup", url: "" },
+	{ name: "Cannellini Beans & Tomatoes", url: "" },
+	{ name: "Carmelized Onion & Spinach Pasta", url: "" },
+	{ name: "Fried Rice", url: "" },
+	{ name: "Green Sauce Pasta", url: "" },
+	{ name: "Greek Meatballs w/ Lemon Orzo", url: "" },
+	{ name: "Enchiladas", url: "" },
+	{ name: "Soba", url: "" },
+	{ name: "Skillet Lemon Chicken & Orzo", url: "" },
+	{ name: "Honey Garlic Chicken", url: "" },
+	{ name: "Red Beans & Rice", url: "" },
+	{ name: "Risotto", url: "" },
+	{ name: "(Chicken) Cheesesteaks", url: "" },
+	{ name: "Asian Meatball Soup", url: "" },
+	{ name: "Pinto Beans & Rice", url: "" },
+	{ name: "Enchilada Rice", url: "" },
+	{ name: "Tortellini & Sausage Soup", url: "" },
+	{ name: "Mushroom & Garlic Spaghetti", url: "" },
+].sort();

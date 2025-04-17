@@ -168,6 +168,12 @@ export const other = [
 	"Toothpaste",
 	"Tooth Brush",
 	"Floss",
+	"Freezer Bags",
+	"Sandwich Bags",
+	"Aluminum Foil",
+	"Parchment Paper",
+	"Saran Wrap",
+	"Wax Paper",
 ].sort();
 
 export const drinks = [
@@ -230,40 +236,96 @@ export const mealIdeas = [
 
 export const mealList = [
 	{ name: "Baked Tacos", url: "" },
-	{ name: "Lemon Chicken Scallopini", url: "" },
-	{ name: "Bulgogi", url: "" },
+	{
+		name: "Lemon Chicken Scallopini",
+		url: "https://www.saltandlavender.com/wprm_print/lemon-butter-chicken-scallopini",
+	},
+	{ name: "Bulgogi", url: "https://damndelicious.net/wprm_print/34905/" },
 	{ name: "Okinawan Taco Rice", url: "" },
-	{ name: "Gyudon", url: "" },
-	{ name: "Baked Chicken Katsu", url: "" },
+	{
+		name: "Gyudon",
+		url: "https://www.justonecookbook.com/wprm_print/gyudon-japanese-beef-rice-bowl",
+	},
+	{
+		name: "Baked Chicken Katsu",
+		url: "https://www.justonecookbook.com/wprm_print/58716",
+	},
 	{ name: "Vodka Sauce Pasta Bake", url: "" },
 	{ name: "Steak Street Tacos", url: "" },
 	{ name: "Chicken Pot Pie", url: "" },
-	{ name: "Ginger Chicken Udon", url: "" },
-	{ name: "Black Bean Burgers", url: "" },
-	{ name: "Chicken Ramen", url: "" },
-	{ name: "Cacio e Pepe", url: "" },
-	{ name: "Gyoza", url: "" },
+	{
+		name: "Ginger Chicken Udon",
+		url: "https://www.bbcgoodfood.com/recipes/ginger-chicken-udon-noodles",
+	},
+	{
+		name: "Black Bean Burgers",
+		url: "https://www.loveandlemons.com/wprm_print/best-black-bean-burger",
+	},
+	{
+		name: "Chicken Ramen",
+		url: "https://www.forkknifeswoon.com/simple-homemade-chicken-ramen/print/17264/",
+	},
+	{
+		name: "Cacio e Pepe",
+		url: "https://www.gimmesomeoven.com/cacio-e-pepe/print-recipe/60551/",
+	},
+	{ name: "Gyoza", url: "https://www.justonecookbook.com/wprm_print/60570" },
 	{ name: "Turkey Meatballs", url: "" },
 	{ name: "Turkey Black Bean Bake", url: "" },
-	{ name: "Baked Ziti", url: "" },
-	{ name: "Stuffed Peppers", url: "" },
+	{
+		name: "Baked Ziti",
+		url: "https://apaigeofpositivity.com/wprm_print/healthy-baked-ziti",
+	},
+	{
+		name: "Stuffed Peppers",
+		url: "https://belleofthekitchen.com/wprm_print/5854",
+	},
 	{ name: "Lettuce Wraps", url: "" },
-	{ name: "Broccoli Cheddar Soup", url: "" },
-	{ name: "Cannellini Beans & Tomatoes", url: "" },
-	{ name: "Carmelized Onion & Spinach Pasta", url: "" },
-	{ name: "Fried Rice", url: "" },
+	{
+		name: "Broccoli Cheddar Soup",
+		url: "https://www.instagram.com/reel/C_bmeJTymok/?igsh=dzlodGJpZ2Y3MWNk",
+	},
+	{
+		name: "Cannellini Beans & Tomatoes",
+		url: "https://www.instagram.com/p/C2FKlpAqUWj/",
+	},
+	{
+		name: "Carmelized Onion & Spinach Pasta",
+		url: "https://www.ambitiouskitchen.com/wprm_print/40632",
+	},
+	{
+		name: "Fried Rice",
+		url: "https://www.justonecookbook.com/wprm_print/75644",
+	},
 	{ name: "Green Sauce Pasta", url: "" },
-	{ name: "Greek Meatballs w/ Lemon Orzo", url: "" },
+	{
+		name: "Greek Meatballs w/ Lemon Orzo",
+		url: "https://braesbites.com/wprm_print/easy-greek-chicken-meatballs-with-lemon-orzo",
+	},
 	{ name: "Enchiladas", url: "" },
 	{ name: "Soba", url: "" },
 	{ name: "Skillet Lemon Chicken & Orzo", url: "" },
-	{ name: "Honey Garlic Chicken", url: "" },
+	{
+		name: "Honey Garlic Chicken",
+		url: "https://www.halfbakedharvest.com/honey-garlic-chicken/",
+	},
 	{ name: "Red Beans & Rice", url: "" },
 	{ name: "Risotto", url: "" },
 	{ name: "(Chicken) Cheesesteaks", url: "" },
 	{ name: "Asian Meatball Soup", url: "" },
 	{ name: "Pinto Beans & Rice", url: "" },
-	{ name: "Enchilada Rice", url: "" },
+	{
+		name: "Enchilada Rice",
+		url: "https://damndelicious.net/2014/09/17/cheesy-enchilada-rice-skillet/",
+	},
 	{ name: "Tortellini & Sausage Soup", url: "" },
 	{ name: "Mushroom & Garlic Spaghetti", url: "" },
+	{
+		name: "Chicken Ramen",
+		url: "https://www.forkknifeswoon.com/simple-homemade-chicken-ramen/print/17264/",
+	},
+	{
+		name: "Butter Chicken Curry",
+		url: "https://therecipecritic.com/wprm_print/easy-butter-chicken",
+	},
 ].sort();

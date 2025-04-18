@@ -40,3 +40,4 @@ Observations after uploading:
   - Header still too large on tablet format -- FIXED
   - Item and header font smaller, category size wider on phone format -- FIXED
   - New delete button appears to be just slightly off centre -- FIXED
+  - Scroll bar color has to be changed, white is too light

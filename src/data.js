@@ -226,7 +226,7 @@ export const mealIdeas = [
 	"Honey Garlic Chicken",
 	"Red Beans & Rice",
 	"Risotto",
-	"(Chicken) Cheesesteaks",
+	"Chicken Cheesesteaks",
 	"Asian Meatball Soup",
 	"Pinto Beans & Rice",
 	"Enchilada Rice",
@@ -241,7 +241,10 @@ export const mealList = [
 		url: "https://www.saltandlavender.com/wprm_print/lemon-butter-chicken-scallopini",
 	},
 	{ name: "Bulgogi", url: "https://damndelicious.net/wprm_print/34905/" },
-	{ name: "Okinawan Taco Rice", url: "" },
+	{
+		name: "Okinawan Taco Rice",
+		url: "https://www.justonecookbook.com/wprm_print/70447",
+	},
 	{
 		name: "Gyudon",
 		url: "https://www.justonecookbook.com/wprm_print/gyudon-japanese-beef-rice-bowl",
@@ -250,8 +253,14 @@ export const mealList = [
 		name: "Baked Chicken Katsu",
 		url: "https://www.justonecookbook.com/wprm_print/58716",
 	},
-	{ name: "Vodka Sauce Pasta Bake", url: "" },
-	{ name: "Steak Street Tacos", url: "" },
+	{
+		name: "Vodka Sauce Pasta Bake",
+		url: "https://www.mysequinedlife.com/wprm_print/10047",
+	},
+	{
+		name: "Steak Street Tacos",
+		url: "https://damndelicious.net/wprm_print/mexican-street-tacos-3/",
+	},
 	{ name: "Chicken Pot Pie", url: "" },
 	{
 		name: "Ginger Chicken Udon",
@@ -270,8 +279,14 @@ export const mealList = [
 		url: "https://www.gimmesomeoven.com/cacio-e-pepe/print-recipe/60551/",
 	},
 	{ name: "Gyoza", url: "https://www.justonecookbook.com/wprm_print/60570" },
-	{ name: "Turkey Meatballs", url: "" },
-	{ name: "Turkey Black Bean Bake", url: "" },
+	{
+		name: "Turkey Meatballs",
+		url: "https://www.wellplated.com/wprm_print/38662/",
+	},
+	{
+		name: "Turkey Black Bean Bake",
+		url: "https://docs.google.com/document/d/1YjDSJlnhstvWHKEIc20pJsrX3uFMt6EOvCj9V6aLxwc/edit?usp=sharing",
+	},
 	{
 		name: "Baked Ziti",
 		url: "https://apaigeofpositivity.com/wprm_print/healthy-baked-ziti",
@@ -280,7 +295,10 @@ export const mealList = [
 		name: "Stuffed Peppers",
 		url: "https://belleofthekitchen.com/wprm_print/5854",
 	},
-	{ name: "Lettuce Wraps", url: "" },
+	{
+		name: "Lettuce Wraps",
+		url: "https://docs.google.com/document/d/18tAHzmbi2QlX0GpVyzgq9uzHZol46e8a-g6JS6oXN6k/edit#heading=h.ybnllkz4tdir",
+	},
 	{
 		name: "Broccoli Cheddar Soup",
 		url: "https://www.instagram.com/reel/C_bmeJTymok/?igsh=dzlodGJpZ2Y3MWNk",
@@ -303,23 +321,38 @@ export const mealList = [
 		url: "https://braesbites.com/wprm_print/easy-greek-chicken-meatballs-with-lemon-orzo",
 	},
 	{ name: "Enchiladas", url: "" },
-	{ name: "Soba", url: "" },
-	{ name: "Skillet Lemon Chicken & Orzo", url: "" },
+	{
+		name: "Soba",
+		url: "https://www.justonecookbook.com/wprm_print/soba-noodle-soup",
+	},
+	{
+		name: "Skillet Lemon Chicken & Orzo",
+		url: "https://www.halfbakedharvest.com/wprm_print/58017",
+	},
 	{
 		name: "Honey Garlic Chicken",
 		url: "https://www.halfbakedharvest.com/honey-garlic-chicken/",
 	},
-	{ name: "Red Beans & Rice", url: "" },
+	{
+		name: "Red Beans & Rice",
+		url: "https://damndelicious.net/wprm_print/red-beans-and-rice-2/",
+	},
 	{ name: "Risotto", url: "" },
-	{ name: "(Chicken) Cheesesteaks", url: "" },
+	{ name: "Chicken Cheesesteaks", url: "" },
 	{ name: "Asian Meatball Soup", url: "" },
-	{ name: "Pinto Beans & Rice", url: "" },
+	{ name: "Pinto Beans & Rice", url: "https://pin.it/1pdb4q4SI" },
 	{
 		name: "Enchilada Rice",
 		url: "https://damndelicious.net/2014/09/17/cheesy-enchilada-rice-skillet/",
 	},
-	{ name: "Tortellini & Sausage Soup", url: "" },
-	{ name: "Mushroom & Garlic Spaghetti", url: "" },
+	{
+		name: "Tortellini & Sausage Soup",
+		url: "https://www.tasteofhome.com/recipes/sausage-and-spinach-tortellini-soup/print/",
+	},
+	{
+		name: "Mushroom & Garlic Spaghetti",
+		url: "https://www.thekitchn.com/_/print",
+	},
 	{
 		name: "Chicken Ramen",
 		url: "https://www.forkknifeswoon.com/simple-homemade-chicken-ramen/print/17264/",

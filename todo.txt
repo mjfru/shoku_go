@@ -22,7 +22,7 @@ Functionality:
   - Implement a way to share the lists / screen -- IN PROGRESS...
   - Cross-off items when hitting their respective checkbox or text -- DECIDED AGAINST, might be annoying when scrolling / interacting
   - Toasts for item entry errors
-  - Display a link (if applicable) instead of plain text for meals. (Convert meal list into an array of objects)
+  - Display a link (if applicable) instead of plain text for meals. (Convert meal list into an array of objects) -- DONE
   - Hide meal inputs when maximum reached -- DECIDED AGAINST
 
 House-Keeping:
@@ -36,7 +36,7 @@ Observations after uploading:
   - Fix width / height for header and Footer (phone) -- FIXED
   - Fix width / height for header and Footer (tablet) -- Header FIXED / Footer IN PROGRESS...(tablet only)
   - Consider using a smaller button ('X'?) instead of 'Delete' for smaller screens -- DONE
-  - Phone-sizes: Logo appears lower than it should on actual phones, but not on dev tools
+  - Logo appears lower than it should on actual phones, but not on dev tools (maybe convert to img instead)
   - Header still too large on tablet format -- FIXED
   - Item and header font smaller, category size wider on phone format -- FIXED
   - New delete button appears to be just slightly off centre -- FIXED

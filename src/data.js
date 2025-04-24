@@ -361,4 +361,4 @@ export const mealList = [
 		name: "Butter Chicken Curry",
 		url: "https://therecipecritic.com/wprm_print/easy-butter-chicken",
 	},
-].sort();
+].sort((a, b) => a.name.localeCompare(b.name));

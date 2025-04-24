@@ -114,8 +114,6 @@ h2, h3, h4 {
 	color: var(--transparent-red);
 	border: 8px solid var(--transparent-red);
 	border-radius: 50%;
-	padding: 0;
-	padding: 0.5rem;
 	position: absolute;
 	left: 40%;
 	z-index: 0;

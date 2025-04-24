@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { mealIdeas } from "../data";
+import { mealList } from "../data";
 
 //* Because of { day } being passed down from the parent component, each of these components has the unique identifier (Tuesday, Friday, etc.)
 //* As a result, we have seven arrays holding meals for each day of the week and can utilize that into our logic.
@@ -39,7 +39,11 @@ const Meal = ({ day }) => {
 		e.preventDefault();
 		//? Toast here
 		if (!meal.trim()) return;
-		setMeals((prevMeals) => [...prevMeals, meal]);
+
+		const matchedMeal = mealList.find((item) => item.name === meal);
+		const url = matchedMeal?.url || "";
+
+		setMeals((prevMeals) => [...prevMeals, { name: meal, url }]);
 		setMeal("");
 		setSelectOption("");
 	};
@@ -55,7 +59,13 @@ const Meal = ({ day }) => {
 			{meals.map((meal, index) => {
 				return (
 					<p className="single-meal" key={index}>
-						{meal}
+						{meal.url ? (
+							<a href={meal.url} target="_blank">
+								{meal.name}
+							</a>
+						) : (
+							meal.name
+						)}
 					</p>
 				);
 			})}
@@ -70,10 +80,10 @@ const Meal = ({ day }) => {
 							}}
 						>
 							<option value="">- Meal Ideas -</option>
-							{mealIdeas.map((meal) => {
+							{mealList.map((meal) => {
 								return (
-									<option value={meal} key={meal}>
-										{meal}
+									<option value={meal.name} key={meal.name}>
+										{meal.name}
 									</option>
 								);
 							})}
@@ -95,15 +105,15 @@ const Meal = ({ day }) => {
 						Add
 					</button>
 				</div>
-			<div className="clear-meals clear-one-container">
-				<button
-					className="btn clear-one-btn"
-					onClick={handleClear}
-					disabled={meals.length === 0}
-				>
-					Clear
-				</button>
-			</div>
+				<div className="clear-meals clear-one-container">
+					<button
+						className="btn clear-one-btn"
+						onClick={handleClear}
+						disabled={meals.length === 0}
+					>
+						Clear
+					</button>
+				</div>
 			</form>
 		</div>
 	);

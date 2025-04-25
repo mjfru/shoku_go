@@ -10,7 +10,6 @@
 :root {
 	/* Main color scheme */
 	--background-color: #f1f1e7;
-	--header-color: #a084cf;
 	--primary-btn-color: #f6bd60;
 	--btn-text-color: #f7ede2;
 	--primary-text-color: #3f3f3f;
@@ -241,6 +240,15 @@ input[type="checkbox"] {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	text-transform: capitalize;
+}
+
+.recipe-link {
+  color: #6fa3bf;
+  text-decoration: none;
+}
+
+.recipe-link:hover {
+  color: var(--primary-btn-color);
 }
 
 .empty {

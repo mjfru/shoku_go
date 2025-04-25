@@ -60,7 +60,7 @@ const Meal = ({ day }) => {
 				return (
 					<p className="single-meal" key={index}>
 						{meal.url ? (
-							<a href={meal.url} target="_blank">
+							<a href={meal.url} target="_blank" className="recipe-link">
 								{meal.name}
 							</a>
 						) : (

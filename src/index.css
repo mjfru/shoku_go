@@ -277,9 +277,9 @@ input[type="checkbox"] {
   display: inline;
 }
 
-#quantity-label2 {
+/* #quantity-label2 {
   display: none;
-}
+} */
 
 input[type="number"] {
 	width: 3rem;
@@ -592,9 +592,9 @@ input, select {
     align-items: center;
   }
 
-  #quantity-label1 {
+  /* #quantity-label1 {
     display: none;
-  }
+  } */
   
   input[type="number"] {
     width: 3rem;
@@ -699,9 +699,9 @@ input, select {
     align-items: flex-start;
   }
 
-  #quantity-label2 {
+  /* #quantity-label2 {
     display: inline-block;
-  }
+  } */
 
   .global-btn-container {
     width: 100vw;
@@ -809,9 +809,13 @@ input, select {
     margin-bottom: .15rem;
   }
 
+  /* #quantity-label1 {
+    display: none;
+  }
+
   #quantity-label2 {
     display: inline-block;
-  }
+  } */
 
   .global-btn-container {
     width: 100vw;

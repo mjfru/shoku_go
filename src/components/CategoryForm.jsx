@@ -107,8 +107,9 @@ const CategoryForm = ({
 			<form onSubmit={handleSubmit} className="form-container">
 				<div className="form-inputs">
 					<div className="quantity-container">
+            {/* FIX */}
 						<label id="quantity-label1">Quantity: </label>
-						<label id="quantity-label2">Qty: </label>
+						{/* <label id="quantity-label2">Qty: </label> */}
 						<input
 							type="number"
 							min="1"

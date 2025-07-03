@@ -57,6 +57,7 @@ export const produce = [
 	"Green Beans",
 	"Snow Peas",
 	"Sweet Potatoes (Bag)",
+	"Arugula",
 ].sort();
 
 export const bakery = [
@@ -111,6 +112,13 @@ export const dryGoods = [
 	"Curry Sauce",
 	"Italian Bread Crumbs",
 	"Panko",
+	"Tortellini",
+	"Gochujang",
+	"Paprika",
+	"Cumin",
+	"Oregano",
+	"Cayenne Pepper",
+	"San Marzano Tomatoes",
 ].sort();
 
 export const protein = [
@@ -145,6 +153,8 @@ export const dairy = [
 	"Cream Cheese",
 	"Parmesan Cheese (Block)",
 	"Goat Cheese",
+	"Feta (Block)",
+	"Feta (Crumbles)",
 ].sort();
 
 export const frozen = [
@@ -356,5 +366,9 @@ export const mealList = [
 	{
 		name: "Butter Chicken Curry",
 		url: "https://therecipecritic.com/wprm_print/easy-butter-chicken",
+	},
+	{
+		name: "Feta & Tomato Pasta",
+		url: "https://www.instagram.com/p/Cpp7XFeA4-U/",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

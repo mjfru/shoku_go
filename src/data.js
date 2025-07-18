@@ -13,7 +13,14 @@ export const weeklyItems = {
 		{ id: nanoid(), name: "Chicken Broth", quantity: 1, purchased: false },
 	],
 	protein: [],
-	dairy: [{ id: nanoid, name: "Greek Yogurt", quantity: 6, purchased: false }],
+	dairy: [
+		{
+			id: nanoid,
+			name: "Greek Yogurt (Singles)",
+			quantity: 6,
+			purchased: false,
+		},
+	],
 	frozen: [],
 	other: [],
 	drinks: [],
@@ -58,6 +65,8 @@ export const produce = [
 	"Snow Peas",
 	"Sweet Potatoes (Bag)",
 	"Arugula",
+	"Large Tomatoes",
+	"Zucchini",
 ].sort();
 
 export const bakery = [
@@ -74,6 +83,7 @@ export const bakery = [
 ].sort();
 
 export const dryGoods = [
+	"Apple Cider Vinegar",
 	"Black Beans",
 	"White Rice",
 	"Chocolate Bar",
@@ -92,7 +102,6 @@ export const dryGoods = [
 	"Tortilla Chips",
 	"Hot Sauce",
 	"Granola Bars",
-	"Chocolate",
 	"Chocolate Chips",
 	"Pistachioes",
 	"Almonds",
@@ -119,6 +128,8 @@ export const dryGoods = [
 	"Oregano",
 	"Cayenne Pepper",
 	"San Marzano Tomatoes",
+	"Fruit Jam",
+	"Cereal",
 ].sort();
 
 export const protein = [
@@ -133,6 +144,7 @@ export const protein = [
 	"Ground Pork",
 	"Ground Beef",
 	"Pork Cutlets",
+	"Turkey Bacon",
 ].sort();
 
 export const dairy = [
@@ -140,7 +152,7 @@ export const dairy = [
 	"Eggs (Dozen)",
 	"Eggs (Half Dozen)",
 	"Milk (1/2 Gal)",
-	"Greek Yogurt",
+	"Greek Yogurt (Singles)",
 	"Coffee Creamer",
 	"Parmigiano Reggiano",
 	"Sharp Cheddar (Block)",
@@ -155,6 +167,7 @@ export const dairy = [
 	"Goat Cheese",
 	"Feta (Block)",
 	"Feta (Crumbles)",
+	"Greek Yogurt (Tub)",
 ].sort();
 
 export const frozen = [
@@ -166,6 +179,7 @@ export const frozen = [
 	"Smoothie Fruit",
 	"Ice Cream",
 	"Gyoza Wrappers",
+	"Pizza Dough",
 ].sort();
 
 export const other = [
@@ -370,5 +384,13 @@ export const mealList = [
 	{
 		name: "Feta & Tomato Pasta",
 		url: "https://www.instagram.com/p/Cpp7XFeA4-U/",
+	},
+	{
+		name: "TBLT",
+		url: "",
+	},
+	{
+		name: "Homemade Pizza",
+		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

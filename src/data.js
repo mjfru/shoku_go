@@ -130,6 +130,8 @@ export const dryGoods = [
 	"San Marzano Tomatoes",
 	"Fruit Jam",
 	"Cereal",
+	"Cake Mix",
+	"Cake Icing",
 ].sort();
 
 export const protein = [
@@ -145,6 +147,7 @@ export const protein = [
 	"Ground Beef",
 	"Pork Cutlets",
 	"Turkey Bacon",
+	"German Sausage",
 ].sort();
 
 export const dairy = [
@@ -216,47 +219,6 @@ export const drinks = [
 	"Fridge Beer (6) - Guinness",
 	"Fridge Beer (12) - Guinness",
 ].sort();
-
-// Meals
-// export const mealIdeas = [
-// 	"Baked Tacos",
-// 	"Lemon Chicken Scallopini",
-// 	"Bulgogi",
-// 	"Okinawan Taco Rice",
-// 	"Gyudon",
-// 	"Baked Chicken Katsu",
-// 	"Vodka Sauce Pasta Bake",
-// 	"Steak Street Tacos",
-// 	"Lettuce Wraps",
-// 	"Chicken Pot Pie",
-// 	"Ginger Chicken Udon",
-// 	"Black Bean Burgers",
-// 	"Chicken Ramen",
-// 	"Cacio e Pepe",
-// 	"Gyoza",
-// 	"Turkey Meatballs",
-// 	"Turkey Black Bean Bake",
-// 	"Baked Ziti",
-// 	"Stuffed Peppers",
-// 	"Broccoli Cheddar Soup",
-// 	"Cannellini Beans & Tomatoes",
-// 	"Carmelized Onion & Spinach Pasta",
-// 	"Fried Rice",
-// 	"Green Sauce Pasta",
-// 	"Greek Meatballs w/ Lemon Orzo",
-// 	"Enchiladas",
-// 	"Soba",
-// 	"Skillet Lemon Chicken & Orzo",
-// 	"Honey Garlic Chicken",
-// 	"Red Beans & Rice",
-// 	"Risotto",
-// 	"Chicken Cheesesteaks",
-// 	"Asian Meatball Soup",
-// 	"Pinto Beans & Rice",
-// 	"Enchilada Rice",
-// 	"Tortellini & Sausage Soup",
-// 	"Mushroom & Garlic Spaghetti",
-// ].sort();
 
 export const mealList = [
 	{ name: "Baked Tacos", url: "" },
@@ -386,11 +348,19 @@ export const mealList = [
 		url: "https://www.instagram.com/p/Cpp7XFeA4-U/",
 	},
 	{
-		name: "TBLT",
+		name: "Turkey BLT",
 		url: "",
 	},
 	{
 		name: "Homemade Pizza",
+		url: "",
+	},
+	{
+		name: "Hiyashi Chuka",
+		url: "http://justonecookbook.com/wprm_print/hiyashi-chuka-cold-ramen",
+	},
+	{
+		name: "Spicy White Beans & Tomatoes",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

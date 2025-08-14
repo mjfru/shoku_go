@@ -67,6 +67,7 @@ export const produce = [
 	"Arugula",
 	"Large Tomatoes",
 	"Zucchini",
+	"Strawberries",
 ].sort();
 
 export const bakery = [
@@ -146,7 +147,6 @@ export const protein = [
 	"Ground Pork",
 	"Ground Beef",
 	"Pork Cutlets",
-	"Turkey Bacon",
 	"German Sausage",
 ].sort();
 

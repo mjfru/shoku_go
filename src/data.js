@@ -171,6 +171,7 @@ export const dairy = [
 	"Feta (Block)",
 	"Feta (Crumbles)",
 	"Greek Yogurt (Tub)",
+	"Butter",
 ].sort();
 
 export const frozen = [
@@ -361,6 +362,14 @@ export const mealList = [
 	},
 	{
 		name: "Spicy White Beans & Tomatoes",
+		url: "",
+	},
+	{
+		name: "Spicy Soy Rice & Chicken",
+		url: "https://www.instagram.com/p/DIQtNK1TGyr/",
+	},
+	{
+		name: "Pesto Pasta",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

@@ -16,8 +16,8 @@ export const weeklyItems = {
 	dairy: [
 		{
 			id: nanoid,
-			name: "Greek Yogurt (Singles)",
-			quantity: 6,
+			name: "Greek Yogurt (Tub)",
+			quantity: 1,
 			purchased: false,
 		},
 	],
@@ -133,6 +133,8 @@ export const dryGoods = [
 	"Cereal",
 	"Cake Mix",
 	"Cake Icing",
+	"Popcorn",
+	"Red Pepper Flakes",
 ].sort();
 
 export const protein = [
@@ -148,6 +150,7 @@ export const protein = [
 	"Ground Beef",
 	"Pork Cutlets",
 	"German Sausage",
+	"Chicken (Whole)",
 ].sort();
 
 export const dairy = [
@@ -202,6 +205,7 @@ export const other = [
 	"Parchment Paper",
 	"Saran Wrap",
 	"Wax Paper",
+	"Garbage Bags",
 ].sort();
 
 export const drinks = [

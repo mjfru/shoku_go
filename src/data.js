@@ -35,6 +35,7 @@ export const produce = [
 	"Yellow Onions",
 	"Red Onions",
 	"Carrots",
+	"Baby Carrots",
 	"Parsely",
 	"Pears (Anjou)",
 	"Pears (Asian)",
@@ -68,7 +69,9 @@ export const produce = [
 	"Large Tomatoes",
 	"Zucchini",
 	"Strawberries",
-  "Spring Greens",
+	"Spring Greens",
+	"Butternut Squash",
+	"Sage",
 ].sort();
 
 export const bakery = [
@@ -136,8 +139,10 @@ export const dryGoods = [
 	"Cake Icing",
 	"Popcorn",
 	"Red Pepper Flakes",
-  "Sun-dried Tomatoes",
-  "Egg Noodles",
+	"Sun-dried Tomatoes",
+	"Egg Noodles",
+	"White Vinegar",
+	"Hoisin Sauce",
 ].sort();
 
 export const protein = [
@@ -209,6 +214,7 @@ export const other = [
 	"Saran Wrap",
 	"Wax Paper",
 	"Garbage Bags",
+	"Vitamins",
 ].sort();
 
 export const drinks = [

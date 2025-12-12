@@ -13,17 +13,12 @@ export const weeklyItems = {
 		{ id: nanoid(), name: "Chicken Broth", quantity: 1, purchased: false },
 	],
 	protein: [],
-	dairy: [
-		{
-			id: nanoid,
-			name: "Greek Yogurt (Tub)",
-			quantity: 1,
-			purchased: false,
-		},
-	],
+	dairy: [],
 	frozen: [],
 	other: [],
-	drinks: [],
+	drinks: [
+		{ id: nanoid(), name: "Coconut Water", quantity: 3, purchased: false },
+	],
 };
 
 export const produce = [
@@ -72,6 +67,8 @@ export const produce = [
 	"Spring Greens",
 	"Butternut Squash",
 	"Sage",
+	"Cranberries",
+	"Raspberries",
 ].sort();
 
 export const bakery = [
@@ -143,6 +140,8 @@ export const dryGoods = [
 	"Egg Noodles",
 	"White Vinegar",
 	"Hoisin Sauce",
+	"Garlic Powder",
+	"Onion Powder",
 ].sort();
 
 export const protein = [
@@ -215,6 +214,7 @@ export const other = [
 	"Wax Paper",
 	"Garbage Bags",
 	"Vitamins",
+	"Tissues",
 ].sort();
 
 export const drinks = [
@@ -383,6 +383,10 @@ export const mealList = [
 	},
 	{
 		name: "Pesto Pasta",
+		url: "",
+	},
+	{
+		name: "Turkey Chili",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

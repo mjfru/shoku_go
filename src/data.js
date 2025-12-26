@@ -215,6 +215,8 @@ export const other = [
 	"Garbage Bags",
 	"Vitamins",
 	"Tissues",
+  "Laundry Detergent",
+  "Dish Detergent",
 ].sort();
 
 export const drinks = [
@@ -392,5 +394,6 @@ export const mealList = [
   {
     name: "Macaroni & Cheese",
     url: "",
-  }
+  },
+  
 ].sort((a, b) => a.name.localeCompare(b.name));

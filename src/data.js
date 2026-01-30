@@ -143,6 +143,9 @@ export const dryGoods = [
 	"Hoisin Sauce",
 	"Garlic Powder",
 	"Onion Powder",
+  "Soba",
+  "Ramen",
+  "Udon",
 ].sort();
 
 export const protein = [

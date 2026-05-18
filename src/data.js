@@ -38,7 +38,7 @@ export const produce = [
 	"Jalapenos",
 	"Chilis",
 	"Bell Peppers",
-	"Mangos",
+	"Mangoes",
 	"Cabbage",
 	"Salad Mix",
 	"Kale (Bunch)",
@@ -143,9 +143,11 @@ export const dryGoods = [
 	"Hoisin Sauce",
 	"Garlic Powder",
 	"Onion Powder",
-  "Soba",
-  "Ramen",
-  "Udon",
+	"Soba",
+	"Ramen",
+	"Udon",
+	"Lärabars",
+	"Pickles",
 ].sort();
 
 export const protein = [
@@ -221,6 +223,7 @@ export const other = [
 	"Tissues",
 	"Laundry Detergent",
 	"Dish Detergent",
+	"Dog Treats",
 ].sort();
 
 export const drinks = [
@@ -397,6 +400,10 @@ export const mealList = [
 	},
 	{
 		name: "Macaroni & Cheese",
+		url: "",
+	},
+	{
+		name: "Spicy Rigatoni & Sausage",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

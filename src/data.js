@@ -164,6 +164,8 @@ export const protein = [
 	"Pork Cutlets",
 	"German Sausage",
 	"Chicken (Whole)",
+	"Cold Cuts (Turkey)",
+	"Cold Cuts (Ham)",
 ].sort();
 
 export const dairy = [
@@ -188,6 +190,7 @@ export const dairy = [
 	"Feta (Crumbles)",
 	"Greek Yogurt (Tub)",
 	"Butter (unsalted)",
+	"Cheddar Cheese (Singles)",
 ].sort();
 
 export const frozen = [
@@ -404,6 +407,10 @@ export const mealList = [
 	},
 	{
 		name: "Spicy Rigatoni & Sausage",
+		url: "",
+	},
+	{
+		name: "Braised White Beans & Leeks",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

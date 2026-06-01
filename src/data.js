@@ -166,6 +166,7 @@ export const protein = [
 	"Chicken (Whole)",
 	"Cold Cuts (Turkey)",
 	"Cold Cuts (Ham)",
+	"Charcuterie Meats",
 ].sort();
 
 export const dairy = [

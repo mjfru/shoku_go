@@ -70,6 +70,7 @@ export const produce = [
 	"Sage",
 	"Cranberries",
 	"Raspberries",
+	"Mushrooms",
 ].sort();
 
 export const bakery = [
@@ -192,6 +193,7 @@ export const dairy = [
 	"Greek Yogurt (Tub)",
 	"Butter (unsalted)",
 	"Cheddar Cheese (Singles)",
+	"American Cheese (Singles)",
 ].sort();
 
 export const frozen = [
@@ -228,6 +230,7 @@ export const other = [
 	"Laundry Detergent",
 	"Dish Detergent",
 	"Dog Treats",
+	"Razors",
 ].sort();
 
 export const drinks = [

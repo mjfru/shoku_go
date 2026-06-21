@@ -204,6 +204,7 @@ export const frozen = [
 	"Carrots",
 	"Smoothie Fruit",
 	"Ice Cream",
+	"Popsicles",
 	"Gyoza Wrappers",
 	"Pizza Dough",
 ].sort();
@@ -230,7 +231,8 @@ export const other = [
 	"Laundry Detergent",
 	"Dish Detergent",
 	"Dog Treats",
-	"Razors",
+	"Dog Toys",
+	"Disposable Razors",
 ].sort();
 
 export const drinks = [

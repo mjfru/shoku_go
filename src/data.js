@@ -149,6 +149,8 @@ export const dryGoods = [
 	"Udon",
 	"Lärabars",
 	"Pickles",
+	"Basalmic Vinegar",
+	"Adobo",
 ].sort();
 
 export const protein = [
@@ -156,6 +158,7 @@ export const protein = [
 	"Ground Turkey",
 	"Chicken Breast",
 	"Chicken Thighs",
+	"Chicken Thighs (Bone-in)",
 	"Shaved Beef",
 	"Chicken Sausage (Italian)",
 	"Chicken Sausage (Spicy)",
@@ -207,6 +210,7 @@ export const frozen = [
 	"Popsicles",
 	"Gyoza Wrappers",
 	"Pizza Dough",
+	"French Fries",
 ].sort();
 
 export const other = [
@@ -417,6 +421,18 @@ export const mealList = [
 	},
 	{
 		name: "Braised White Beans & Leeks",
+		url: "",
+	},
+	{
+		name: "Zarusoba",
+		url: "https://www.justonecookbook.com/wprm_print/zaru-soba-cold-soba-with-dipping-sauce",
+	},
+	{
+		name: "Homemade CNS",
+		url: "",
+	},
+	{
+		name: "Fancy Instant Ramen",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

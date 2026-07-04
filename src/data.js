@@ -151,6 +151,7 @@ export const dryGoods = [
 	"Pickles",
 	"Basalmic Vinegar",
 	"Adobo",
+	"Tsuyu",
 ].sort();
 
 export const protein = [

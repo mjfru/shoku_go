@@ -429,7 +429,7 @@ export const mealList = [
 		url: "https://www.justonecookbook.com/wprm_print/zaru-soba-cold-soba-with-dipping-sauce",
 	},
 	{
-		name: "Homemade CNS",
+		name: "Homemade Chicken Noodle",
 		url: "",
 	},
 	{

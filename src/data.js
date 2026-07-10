@@ -71,6 +71,7 @@ export const produce = [
 	"Cranberries",
 	"Raspberries",
 	"Mushrooms",
+  "Watermelon (Seedless)"
 ].sort();
 
 export const bakery = [
@@ -152,6 +153,8 @@ export const dryGoods = [
 	"Basalmic Vinegar",
 	"Adobo",
 	"Tsuyu",
+  "Spaghetti",
+  "Black Pepper"
 ].sort();
 
 export const protein = [
@@ -198,6 +201,7 @@ export const dairy = [
 	"Butter (unsalted)",
 	"Cheddar Cheese (Singles)",
 	"American Cheese (Singles)",
+  "Cheddar Cheese (Block)"
 ].sort();
 
 export const frozen = [

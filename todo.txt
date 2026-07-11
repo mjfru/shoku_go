@@ -42,3 +42,4 @@ Observations after uploading:
   - New delete button appears to be just slightly off centre -- FIXED
   - Scroll bar color has to be changed, white is too light
   - 'Quantity' and 'Qty' are both shown on some screen sizes in the grocery tab -- FIXED
+  - Display longer list items

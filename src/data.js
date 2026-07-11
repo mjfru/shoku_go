@@ -71,7 +71,7 @@ export const produce = [
 	"Cranberries",
 	"Raspberries",
 	"Mushrooms",
-  "Watermelon (Seedless)"
+	"Watermelon (Seedless)",
 ].sort();
 
 export const bakery = [
@@ -153,8 +153,8 @@ export const dryGoods = [
 	"Basalmic Vinegar",
 	"Adobo",
 	"Tsuyu",
-  "Spaghetti",
-  "Black Pepper"
+	"Spaghetti",
+	"Black Pepper",
 ].sort();
 
 export const protein = [
@@ -201,7 +201,7 @@ export const dairy = [
 	"Butter (unsalted)",
 	"Cheddar Cheese (Singles)",
 	"American Cheese (Singles)",
-  "Cheddar Cheese (Block)"
+	"Cheddar Cheese (Block)",
 ].sort();
 
 export const frozen = [
@@ -303,7 +303,7 @@ export const mealList = [
 	},
 	{
 		name: "Cacio e Pepe",
-		url: "https://www.gimmesomeoven.com/cacio-e-pepe/print-recipe/60551/",
+		url: "https://www.gimmesomeoven.com/print/cacio-e-pepe-2",
 	},
 	{ name: "Gyoza", url: "https://www.justonecookbook.com/wprm_print/60570" },
 	{

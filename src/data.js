@@ -72,6 +72,7 @@ export const produce = [
 	"Raspberries",
 	"Mushrooms",
 	"Watermelon (Seedless)",
+  "Celery"
 ].sort();
 
 export const bakery = [
@@ -175,6 +176,7 @@ export const protein = [
 	"Cold Cuts (Turkey)",
 	"Cold Cuts (Ham)",
 	"Charcuterie Meats",
+  "Rotisserie Chicken"
 ].sort();
 
 export const dairy = [

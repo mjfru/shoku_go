@@ -72,7 +72,7 @@ export const produce = [
 	"Raspberries",
 	"Mushrooms",
 	"Watermelon (Seedless)",
-  "Celery"
+	"Celery",
 ].sort();
 
 export const bakery = [
@@ -176,7 +176,7 @@ export const protein = [
 	"Cold Cuts (Turkey)",
 	"Cold Cuts (Ham)",
 	"Charcuterie Meats",
-  "Rotisserie Chicken"
+	"Rotisserie Chicken",
 ].sort();
 
 export const dairy = [
@@ -440,6 +440,10 @@ export const mealList = [
 	},
 	{
 		name: "Fancy Instant Ramen",
+		url: "",
+	},
+	{
+		name: "Shepherd's Pie",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

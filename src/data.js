@@ -156,6 +156,7 @@ export const dryGoods = [
 	"Tsuyu",
 	"Spaghetti",
 	"Black Pepper",
+	"Lasagna Noodles (Dry)",
 ].sort();
 
 export const protein = [
@@ -177,6 +178,7 @@ export const protein = [
 	"Cold Cuts (Ham)",
 	"Charcuterie Meats",
 	"Rotisserie Chicken",
+	"Ground Lamb",
 ].sort();
 
 export const dairy = [
@@ -204,6 +206,7 @@ export const dairy = [
 	"Cheddar Cheese (Singles)",
 	"American Cheese (Singles)",
 	"Cheddar Cheese (Block)",
+	"Ricotta Cheese",
 ].sort();
 
 export const frozen = [
@@ -444,6 +447,10 @@ export const mealList = [
 	},
 	{
 		name: "Shepherd's Pie",
+		url: "",
+	},
+	{
+		name: "Lasagna",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

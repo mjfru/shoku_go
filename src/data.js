@@ -157,6 +157,7 @@ export const dryGoods = [
 	"Spaghetti",
 	"Black Pepper",
 	"Lasagna Noodles (Dry)",
+	"Mac & Cheese",
 ].sort();
 
 export const protein = [
@@ -203,7 +204,7 @@ export const dairy = [
 	"Feta (Crumbles)",
 	"Greek Yogurt (Tub)",
 	"Butter (unsalted)",
-  "Butter (salted)",
+	"Butter (salted)",
 	"Cheddar Cheese (Singles)",
 	"American Cheese (Singles)",
 	"Cheddar Cheese (Block)",
@@ -248,6 +249,7 @@ export const other = [
 	"Dog Treats",
 	"Dog Toys",
 	"Disposable Razors",
+	"Matches",
 ].sort();
 
 export const drinks = [
@@ -256,7 +258,8 @@ export const drinks = [
 	"Soda Water",
 	"Cranberry Juice",
 	"Orange Juice",
-  "Grapefruit Juice",
+	"Grapefruit Juice",
+	"Lemonade",
 	"Tonic Water",
 	"Distilled Water",
 	"White Wine",

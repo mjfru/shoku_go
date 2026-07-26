@@ -43,3 +43,9 @@ Observations after uploading:
   - Scroll bar color has to be changed, white is too light
   - 'Quantity' and 'Qty' are both shown on some screen sizes in the grocery tab -- FIXED
   - Display longer list items
+
+Next steps:
+  - Make it full stack.
+  - Allow users to make an account and password
+  - From there, users can make custom lists to reflect their shopping habits and favorite cooking recipes
+  - Also would allow a family to share an account and asynchronously add items to the lists

@@ -412,7 +412,7 @@ export const mealList = [
 	},
 	{
 		name: "Spicy White Beans & Tomatoes",
-		url: "",
+		url: "https://mostlovelythings.com/spicy-tomato-beans-and-greens/print/81380/",
 	},
 	{
 		name: "Spicy Soy Rice & Chicken",
@@ -456,6 +456,6 @@ export const mealList = [
 	},
 	{
 		name: "Lasagna",
-		url: "",
+		url: "https://tastesbetterfromscratch.com/wprm_print/homemade-lasagna",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

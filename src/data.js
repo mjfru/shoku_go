@@ -46,7 +46,9 @@ export const produce = [
 	"Spinach",
 	"Lettuce",
 	"Lemons",
+	"Lemons (Bag)",
 	"Limes",
+	"Limes (Bag)",
 	"White Potatoes",
 	"Red Potatoes",
 	"Yellow Potatoes",
@@ -82,6 +84,7 @@ export const bakery = [
 	"Tortillas (Large)",
 	"Tortillas (Small)",
 	"Sourdough Bread",
+	"E.B. Sourdough",
 	"Naan",
 	"Hoagie Rolls",
 	"Hamburger Buns",
@@ -218,7 +221,7 @@ export const frozen = [
 	"Green Beans",
 	"Carrots",
 	"Smoothie Fruit",
-	"Ice Cream",
+	"Ice Cream (Pint)",
 	"Popsicles",
 	"Gyoza Wrappers",
 	"Pizza Dough",
@@ -250,6 +253,8 @@ export const other = [
 	"Dog Toys",
 	"Disposable Razors",
 	"Matches",
+	"Paper Towels",
+	"Toilet Paper",
 ].sort();
 
 export const drinks = [

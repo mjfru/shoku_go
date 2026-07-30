@@ -45,7 +45,7 @@ Observations after uploading:
   - Display longer list items
 
 Next steps:
-  - Make it full stack.
+  - Make it full stack, possibly integrating Supabase?
   - Allow users to make an account and password
   - From there, users can make custom lists to reflect their shopping habits and favorite cooking recipes
   - Also would allow a family to share an account and asynchronously add items to the lists

@@ -343,10 +343,6 @@ export const mealList = [
 		url: "https://docs.google.com/document/d/18tAHzmbi2QlX0GpVyzgq9uzHZol46e8a-g6JS6oXN6k/edit#heading=h.ybnllkz4tdir",
 	},
 	{
-		name: "Broccoli Cheddar Soup",
-		url: "https://www.instagram.com/reel/C_bmeJTymok/?igsh=dzlodGJpZ2Y3MWNk",
-	},
-	{
 		name: "Cannellini Beans & Tomatoes",
 		url: "https://www.instagram.com/p/C2FKlpAqUWj/",
 	},
@@ -363,7 +359,6 @@ export const mealList = [
 		name: "Greek Meatballs w/ Lemon Orzo",
 		url: "https://braesbites.com/wprm_print/easy-greek-chicken-meatballs-with-lemon-orzo",
 	},
-	{ name: "Enchiladas", url: "" },
 	{
 		name: "Soba",
 		url: "https://www.justonecookbook.com/wprm_print/soba-noodle-soup",
@@ -381,7 +376,6 @@ export const mealList = [
 		url: "https://damndelicious.net/wprm_print/red-beans-and-rice-2/",
 	},
 	{ name: "Risotto", url: "" },
-	{ name: "Chicken Cheesesteaks", url: "" },
 	{ name: "Asian Meatball Soup", url: "" },
 	{ name: "Pinto Beans & Rice", url: "https://pin.it/1pdb4q4SI" },
 	{
@@ -434,10 +428,6 @@ export const mealList = [
 	},
 	{
 		name: "Macaroni & Cheese",
-		url: "",
-	},
-	{
-		name: "Spicy Rigatoni & Sausage",
 		url: "",
 	},
 	{

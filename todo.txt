@@ -50,3 +50,6 @@ Next steps:
   - From there, users can make custom lists to reflect their shopping habits and favorite cooking recipes
   - Also would allow a family to share an account and asynchronously add items to the lists
   - Eliminate need for screenshot button but perhaps make it shareable somehow
+
+
+Login page --> Shopping List _ Make Your Custom Shopping List | Recipes _ Make Your Custom Recipe List

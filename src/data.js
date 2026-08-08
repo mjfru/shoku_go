@@ -161,6 +161,9 @@ export const dryGoods = [
 	"Black Pepper",
 	"Lasagna Noodles (Dry)",
 	"Mac & Cheese",
+	"Rolled Oats",
+	"Steel-cut Oats",
+	"Instant Oatmeal",
 ].sort();
 
 export const protein = [
@@ -255,7 +258,7 @@ export const other = [
 	"Matches",
 	"Paper Towels",
 	"Toilet Paper",
-  "Dish Detergent"
+	"Dish Detergent",
 ].sort();
 
 export const drinks = [
@@ -454,12 +457,12 @@ export const mealList = [
 		name: "Lasagna",
 		url: "https://tastesbetterfromscratch.com/wprm_print/homemade-lasagna",
 	},
-  {
-    name: "Chicken Tortellini Soup",
-    url: ""
-  },
-  {
-    name: "Fish Dinner",
-    url: ""
-  }
+	{
+		name: "Chicken Tortellini Soup",
+		url: "",
+	},
+	{
+		name: "Fish Dinner",
+		url: "",
+	},
 ].sort((a, b) => a.name.localeCompare(b.name));

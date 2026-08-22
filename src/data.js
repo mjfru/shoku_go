@@ -164,6 +164,7 @@ export const dryGoods = [
 	"Rolled Oats",
 	"Steel-cut Oats",
 	"Instant Oatmeal",
+  "Passata",
 ].sort();
 
 export const protein = [

@@ -164,7 +164,9 @@ export const dryGoods = [
 	"Rolled Oats",
 	"Steel-cut Oats",
 	"Instant Oatmeal",
-  "Passata",
+	"Passata",
+	"Rice Cakes",
+	"Tea Bags",
 ].sort();
 
 export const protein = [
@@ -260,7 +262,7 @@ export const other = [
 	"Paper Towels",
 	"Toilet Paper",
 	"Dish Detergent",
-  "Bleach",
+	"Bleach",
 ].sort();
 
 export const drinks = [
@@ -465,6 +467,10 @@ export const mealList = [
 	},
 	{
 		name: "Fish Dinner",
+		url: "",
+	},
+	{
+		name: "Roast Chicken & Leeks",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

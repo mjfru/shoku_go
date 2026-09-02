@@ -261,7 +261,6 @@ export const other = [
 	"Matches",
 	"Paper Towels",
 	"Toilet Paper",
-	"Dish Detergent",
 	"Bleach",
 ].sort();
 

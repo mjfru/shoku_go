@@ -189,6 +189,8 @@ export const protein = [
 	"Charcuterie Meats",
 	"Rotisserie Chicken",
 	"Ground Lamb",
+	"Mussels",
+	"Halibut",
 ].sort();
 
 export const dairy = [
@@ -262,6 +264,7 @@ export const other = [
 	"Paper Towels",
 	"Toilet Paper",
 	"Bleach",
+	"Mailer Envelope",
 ].sort();
 
 export const drinks = [

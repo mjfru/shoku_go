@@ -75,6 +75,7 @@ export const produce = [
 	"Mushrooms",
 	"Watermelon (Seedless)",
 	"Celery",
+	"Broccoli",
 ].sort();
 
 export const bakery = [
@@ -167,6 +168,7 @@ export const dryGoods = [
 	"Passata",
 	"Rice Cakes",
 	"Tea Bags",
+	"Maple Syrup",
 ].sort();
 
 export const protein = [
@@ -191,6 +193,7 @@ export const protein = [
 	"Ground Lamb",
 	"Mussels",
 	"Halibut",
+	"Salmon",
 ].sort();
 
 export const dairy = [

@@ -287,6 +287,7 @@ export const drinks = [
 	"Fridge Beer (12) - Heineken",
 	"Fridge Beer (6) - Guinness",
 	"Fridge Beer (12) - Guinness",
+	"Yerba Maté",
 ].sort();
 
 export const mealList = [
@@ -476,6 +477,14 @@ export const mealList = [
 	},
 	{
 		name: "Roast Chicken & Leeks",
+		url: "",
+	},
+	{
+		name: "Baked Salmon & Veggies",
+		url: "",
+	},
+	{
+		name: "Turkey Meatloaf",
 		url: "",
 	},
 ].sort((a, b) => a.name.localeCompare(b.name));

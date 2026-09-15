@@ -237,6 +237,7 @@ export const frozen = [
 	"Gyoza Wrappers",
 	"Pizza Dough",
 	"French Fries",
+  "Sorbet",
 ].sort();
 
 export const other = [

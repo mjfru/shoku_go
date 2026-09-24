@@ -290,6 +290,7 @@ export const drinks = [
 	"Fridge Beer (6) - Guinness",
 	"Fridge Beer (12) - Guinness",
 	"Yerba Maté",
+	"Apple Cider",
 ].sort();
 
 export const mealList = [

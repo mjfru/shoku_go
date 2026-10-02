@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 
 export const weeklyItems = {
 	produce: [
-		{ id: nanoid(), name: "Avocados", quantity: 4, purchased: false },
+		{ id: nanoid(), name: "Avocados (Bag)", quantity: 1, purchased: false },
 		{ id: nanoid(), name: "Apples", quantity: 4, purchased: false },
 		{ id: nanoid(), name: "Bananas", quantity: 5, purchased: false },
 	],
@@ -76,6 +76,7 @@ export const produce = [
 	"Watermelon (Seedless)",
 	"Celery",
 	"Broccoli",
+	"Avocados (Bag)",
 ].sort();
 
 export const bakery = [
@@ -170,6 +171,8 @@ export const dryGoods = [
 	"Tea Bags",
 	"Maple Syrup",
 	"Canned Coconut Milk",
+	"Canned Pumpkin",
+	"Beef Broth",
 ].sort();
 
 export const protein = [
@@ -195,6 +198,7 @@ export const protein = [
 	"Mussels",
 	"Halibut",
 	"Salmon",
+	"Chuck Roast",
 ].sort();
 
 export const dairy = [

@@ -498,4 +498,12 @@ export const mealList = [
 		name: "Butternut Squash Soup",
 		url: "",
 	},
+	{
+		name: "Asian-inspired Chuck Roast",
+		url: "https://www.instagram.com/p/DdchqmUxNqa/",
+	},
+	{
+		name: "Pasta Alfredo",
+		url: "",
+	},
 ].sort((a, b) => a.name.localeCompare(b.name));

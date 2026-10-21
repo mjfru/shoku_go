@@ -408,7 +408,7 @@ export const mealList = [
 	},
 	{
 		name: "Mushroom & Garlic Spaghetti",
-		url: "https://www.thekitchn.com/_/print",
+		url: "https://www.thekitchn.com/recipe-mushroom-and-garlic-spaghetti-dinner-243627",
 	},
 	{
 		name: "Butter Chicken Curry",

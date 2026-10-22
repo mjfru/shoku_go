@@ -173,6 +173,8 @@ export const dryGoods = [
 	"Canned Coconut Milk",
 	"Canned Pumpkin",
 	"Beef Broth",
+  "Mustard",
+  "Whole Bean Coffee"
 ].sort();
 
 export const protein = [
@@ -181,6 +183,7 @@ export const protein = [
 	"Chicken Breast",
 	"Chicken Thighs",
 	"Chicken Thighs (Bone-in)",
+  "Chicken Tenderloins",
 	"Shaved Beef",
 	"Chicken Sausage (Italian)",
 	"Chicken Sausage (Spicy)",
@@ -241,6 +244,7 @@ export const frozen = [
 	"Popsicles",
 	"Gyoza Wrappers",
 	"Pizza Dough",
+	"Pie Dough",
 	"French Fries",
 	"Sorbet",
 ].sort();
@@ -274,6 +278,7 @@ export const other = [
 	"Toilet Paper",
 	"Bleach",
 	"Mailer Envelope",
+	"Firewood",
 ].sort();
 
 export const drinks = [

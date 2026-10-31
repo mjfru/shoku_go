@@ -173,8 +173,11 @@ export const dryGoods = [
 	"Canned Coconut Milk",
 	"Canned Pumpkin",
 	"Beef Broth",
-  "Mustard",
-  "Whole Bean Coffee"
+	"Mustard",
+	"Whole Bean Coffee",
+	"Sugar",
+	"Onion Soup Mix",
+	"Cinnamon",
 ].sort();
 
 export const protein = [
@@ -183,7 +186,7 @@ export const protein = [
 	"Chicken Breast",
 	"Chicken Thighs",
 	"Chicken Thighs (Bone-in)",
-  "Chicken Tenderloins",
+	"Chicken Tenderloins",
 	"Shaved Beef",
 	"Chicken Sausage (Italian)",
 	"Chicken Sausage (Spicy)",

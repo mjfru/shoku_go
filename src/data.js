@@ -514,4 +514,8 @@ export const mealList = [
 		name: "Pasta Alfredo",
 		url: "",
 	},
+	{
+		name: "Carbonnade Flamande",
+		url: "https://www.instagram.com/p/DfNZ_CCAIdZ/",
+	},
 ].sort((a, b) => a.name.localeCompare(b.name));

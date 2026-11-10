@@ -303,6 +303,7 @@ export const drinks = [
 	"Fridge Beer (12) - Guinness",
 	"Yerba Maté",
 	"Apple Cider",
+  "Egg nog",
 ].sort();
 
 export const mealList = [
